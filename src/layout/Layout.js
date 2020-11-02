@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
 }
 body {
   font-family: 'Teko', sans-serif;
+  background: ${({ theme }) => theme.colors.semidark};
 }
 `;
 const Container = styled.div`
@@ -22,7 +23,7 @@ const Container = styled.div`
 export const Section = styled.section`
   height: 100vh;
   padding: 0.7rem;
-  background: ${({ theme }) => theme.colors.semidark};
+  margin-top: -100px;
 `;
 
 const Layout = ({ children }) => (
