@@ -1,10 +1,13 @@
 import React from "react";
-import { MainSection } from "./HeroSection.styled";
+import Slider from "./Slider";
+import { MainSection, SliderContainer } from "./HeroSection.styled";
 
 const HeroSection = () => {
   return (
     <MainSection>
-      <h1>hello</h1>
+      <SliderContainer>
+        <Slider />
+      </SliderContainer>
     </MainSection>
   );
 };

@@ -1,6 +1,5 @@
-import { Section } from "../../layout/Layout";
 import styled from "styled-components";
 
-export const AboutSectionContainer = styled(Section)`
+export const AboutSectionContainer = styled.section`
   font-size: 20px;
 `;
