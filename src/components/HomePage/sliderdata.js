@@ -1,4 +1,4 @@
-export const sliderdata = [
+const sliderdata = [
   {
     id: 1,
     img:
@@ -32,3 +32,5 @@ export const sliderdata = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, repellat. Nam obcaecati ipsam sit harum aspernatur amet quidem, ratione id!",
   },
 ];
+
+export default sliderdata;
