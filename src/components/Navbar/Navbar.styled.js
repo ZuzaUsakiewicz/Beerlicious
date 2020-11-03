@@ -7,7 +7,6 @@ export const Nav = styled.nav`
   padding: 0 2rem;
   background: ${({ scrollNav }) => (scrollNav ? "#173753" : "transparent")};
   height: ${({ scrollNav }) => (scrollNav ? "80px" : "100px")};
-
   max-width: 1600px;
   display: flex;
   justify-content: center;
@@ -38,8 +37,7 @@ export const NavLogo = styled(Link)`
   cursor: pointer;
   display: flex;
   text-decoration: none;
-  justify-self: flex-start;
-  align-items: flex-start;
+  align-items: center;
   font-size: 2rem;
 `;
 
@@ -85,7 +83,7 @@ export const NavbarMenu = styled.ul`
 export const NavItem = styled.li`
   height: 80px;
   border-bottom: 4px solid transparent;
-  transition: all 0.3s ease-in-out;
+  transition: border-bottom 0.5s ease-in-out;
   &:hover {
     border-bottom: 4px solid ${({ theme }) => theme.colors.primary};
   }
@@ -107,9 +105,9 @@ export const NavLink = styled(Link)`
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 100%;
+  transition: all 0.5s ease-in-out;
   &:hover {
     color: ${({ theme }) => theme.colors.hover};
-    transition: all 0.5s ease-in-out;
   }
   @media screen and (max-width: 960px) {
     text-align: center;
