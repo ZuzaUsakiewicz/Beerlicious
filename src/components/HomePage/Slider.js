@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import {
   SliderContent,
   ButtonPrev,
@@ -6,12 +7,15 @@ import {
   SliderTitle,
   SliderParagraph,
   TextContainer,
+  Next,
+  Previous,
+  ActionLink,
 } from "./HeroSection.styled";
 import sliderdata from "./sliderdata";
 
 const Slider = () => {
   const [index, setIndex] = useState(0);
-  const { id, img, title, text } = sliderdata[index];
+  const { id, img, title, url, text } = sliderdata[index];
 
   const checkNumber = (number) => {
     if (number > sliderdata.length - 1) {
@@ -41,9 +45,14 @@ const Slider = () => {
       <TextContainer>
         <SliderTitle>{title}</SliderTitle>
         <SliderParagraph>{text}</SliderParagraph>
+        <ActionLink to={url}>Read More</ActionLink>
       </TextContainer>
-      <ButtonPrev onClick={clickPrev}> prev </ButtonPrev>
-      <ButtonNext onClick={clickNext}> next </ButtonNext>
+      <ButtonPrev onClick={clickPrev}>
+        <Previous />
+      </ButtonPrev>
+      <ButtonNext onClick={clickNext}>
+        <Next />
+      </ButtonNext>
     </SliderContent>
   );
 };
