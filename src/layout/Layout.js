@@ -18,11 +18,6 @@ const Container = styled.div`
   font-weight: ${({ theme }) => theme.fontWeight.normal};
 `;
 
-export const Section = styled.section`
-  height: 100vh;
-  padding: 0.7rem;
-`;
-
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
     <>
