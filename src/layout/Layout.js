@@ -14,8 +14,6 @@ body {
 }
 `;
 const Container = styled.div`
-  /* width: 100%;
-  height: 100%; */
   font-family: "Teko", sans-serif;
   font-weight: ${({ theme }) => theme.fontWeight.normal};
 `;
@@ -23,7 +21,6 @@ const Container = styled.div`
 export const Section = styled.section`
   height: 100vh;
   padding: 0.7rem;
-  margin-top: -100px;
 `;
 
 const Layout = ({ children }) => (
