@@ -1,7 +1,7 @@
 import React from "react";
 
 const BeersPage = () => {
-  return <h1>Beers</h1>;
+  return <h1>hello</h1>;
 };
 
 export default BeersPage;
