@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 const url = "https://api.punkapi.com/v2/beers";
 const BeerContext = React.createContext();
@@ -16,13 +16,11 @@ const BeerAppProvider = ({ children }) => {
     setBeers(beers);
     console.log(beers);
   };
-  return (
-    <BeerContext.Provider value={{ ...beers }}>{children}</BeerContext.Provider>
-  );
+  return <BeerContext.Provider value={beers}>{children}</BeerContext.Provider>;
 };
 
-export const useGlobalContext = () => {
-  return useContext(BeerContext);
-};
+// export const useGlobalContext = () => {
+//   return useContext(BeerContext);
+// };
 
 export { BeerContext, BeerAppProvider };
