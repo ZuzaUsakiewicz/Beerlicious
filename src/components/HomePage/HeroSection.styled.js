@@ -1,6 +1,5 @@
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 export const MainSection = styled.section`
   height: 90vh;
@@ -93,17 +92,12 @@ export const TextContainer = styled.div`
   }
 `;
 
-export const ActionLink = styled(Link)`
-  text-decoration: none;
-  background: red;
-  padding: 10px 20px;
-`;
-export const SliderTitle = styled.h1`
-  font-size: ${({ theme }) => theme.fontSize.huge};
-  @media screen and (max-width: 960px) {
-    font-size: ${({ theme }) => theme.fontSize.regular};
-  }
-`;
+// export const SliderTitle = styled.h1`
+//   font-size: ${({ theme }) => theme.fontSize.huge};
+//   @media screen and (max-width: 960px) {
+//     font-size: ${({ theme }) => theme.fontSize.regular};
+//   }
+// `;
 
 export const SliderParagraph = styled.p`
   font-weight: ${({ theme }) => theme.fontWeight.thin};

@@ -1,5 +1,4 @@
-import React, { useContext } from "react";
-import { BeerContext } from "../../context";
+import React from "react";
 import {
   InfoSectionContainer,
   InfoText,
@@ -10,19 +9,8 @@ import {
 } from "./InfoSection.styled";
 
 const InfoSection = () => {
-  const beers = useContext(BeerContext);
-  console.log(beers);
   return (
     <InfoSectionContainer>
-      <div>
-        {beers.map((beer) => {
-          return (
-            <h1 key={beer.id} {...beer}>
-              {beer.name}
-            </h1>
-          );
-        })}
-      </div>
       <InfoText>
         <Title>beerlicious team</Title>
         <Informations>

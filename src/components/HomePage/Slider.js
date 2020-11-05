@@ -1,16 +1,15 @@
 import React, { useState } from "react";
-
+import { Title } from "./InfoSection.styled";
 import {
   SliderContent,
   ButtonPrev,
   ButtonNext,
-  SliderTitle,
   SliderParagraph,
   TextContainer,
   Next,
   Previous,
-  ActionLink,
 } from "./HeroSection.styled";
+import { Button } from "../Button/Button";
 import sliderdata from "./sliderdata";
 
 const Slider = () => {
@@ -43,9 +42,9 @@ const Slider = () => {
   return (
     <SliderContent img={img} key={id}>
       <TextContainer>
-        <SliderTitle>{title}</SliderTitle>
+        <Title>{title}</Title>
         <SliderParagraph>{text}</SliderParagraph>
-        <ActionLink to={url}>Read More</ActionLink>
+        <Button to={url}>Read More</Button>
       </TextContainer>
       <ButtonPrev onClick={clickPrev}>
         <Previous />

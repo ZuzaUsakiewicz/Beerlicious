@@ -10,7 +10,7 @@ export const InfoSectionContainer = styled.section`
   @media screen and (max-width: 960px) {
     height: 120vh;
     flex-direction: column;
-    padding: 0 1rem;
+    padding: 1rem;
   }
 `;
 
@@ -25,6 +25,7 @@ export const InfoText = styled.div`
 `;
 
 export const Title = styled.h1`
+  color: ${({ theme }) => theme.colors.primary};
   line-height: 4rem;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -36,7 +37,7 @@ export const Title = styled.h1`
     bottom: -20px;
     right: 0;
     left: 0;
-    width: 70%;
+    width: 100px;
     border-bottom: 10px solid ${({ theme }) => theme.colors.hover};
   }
   @media screen and (max-width: 960px) {
@@ -63,7 +64,7 @@ export const ImageContainer = styled.div`
   box-shadow: -2px 2px 20px 10px rgba(23, 55, 83, 0.6);
   @media screen and (max-width: 960px) {
     width: 100%;
-    height: 100%;
+    height: 60%;
   }
 `;
 
