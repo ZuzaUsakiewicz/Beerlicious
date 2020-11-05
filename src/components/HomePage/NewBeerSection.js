@@ -11,6 +11,7 @@ import {
   IconAndText,
   BeerName,
   BeerWrapper,
+  Description,
 } from "./NewBeerSection.styled";
 import { GiHops } from "react-icons/gi";
 import { FaPercentage } from "react-icons/fa";
@@ -20,12 +21,12 @@ const NewBeerSection = () => {
   const beers = useContext(BeerContext);
   // console.log(beers);
   const oneBeer = beers.filter((beer) => {
-    return beer.id === 5;
+    return beer.id === 10;
   });
 
   return (
     <NewBeerContainer>
-      <Title>beer</Title>
+      <Title>our beers</Title>
       <BeerWrapper>
         {oneBeer.map((item) => {
           return (
@@ -44,7 +45,7 @@ const NewBeerSection = () => {
                     <FaPercentage />
                     <span>{item.abv}</span>
                   </IconAndText>
-                  <p>{item.description}</p>
+                  <Description>{item.description}</Description>
                 </TextContent>
                 <ButtonContainer>
                   <Button primary to="beers">

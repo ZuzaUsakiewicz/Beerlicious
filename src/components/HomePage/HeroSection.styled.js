@@ -2,8 +2,7 @@ import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 import styled from "styled-components";
 
 export const MainSection = styled.section`
-  height: 90vh;
-  background: rgba(0, 0, 0, 0.3);
+  height: 100vh;
 `;
 
 export const SliderContainer = styled.div`
@@ -25,7 +24,7 @@ export const SliderContent = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 0 0 1000px rgba(48, 149, 221, 0.836);
   transition: all 0.5s ease-in-out;
 `;
 
@@ -100,6 +99,7 @@ export const TextContainer = styled.div`
 // `;
 
 export const SliderParagraph = styled.p`
+  padding: 2rem 0;
   font-weight: ${({ theme }) => theme.fontWeight.thin};
   font-size: ${({ theme }) => theme.fontSize.regular};
   @media screen and (max-width: 960px) {

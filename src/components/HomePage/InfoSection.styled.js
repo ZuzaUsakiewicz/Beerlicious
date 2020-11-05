@@ -42,10 +42,13 @@ export const Title = styled.h1`
   }
   @media screen and (max-width: 960px) {
     font-size: 2rem;
+    &:after {
+      bottom: -3px;
+    }
   }
 `;
 export const Informations = styled.p`
-  letter-spacing: 1px;
+  line-height: 25px;
   padding: 2rem 0;
   font-size: 1rem;
   text-align: justify;
@@ -69,6 +72,7 @@ export const ImageContainer = styled.div`
 `;
 
 export const Span = styled.span`
+  color: ${({ theme }) => theme.colors.orange};
   font-weight: bold;
   letter-spacing: 4px;
   text-transform: uppercase;
