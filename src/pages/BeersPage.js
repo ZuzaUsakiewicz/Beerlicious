@@ -1,7 +1,12 @@
 import React from "react";
+import AllBeers from "../components/BeersPage/AllBeers";
 
 const BeersPage = () => {
-  return <h1>hello</h1>;
+  return (
+    <>
+      <AllBeers />
+    </>
+  );
 };
 
 export default BeersPage;
