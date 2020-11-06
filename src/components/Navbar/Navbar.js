@@ -42,16 +42,16 @@ function Navbar() {
             <NavLink to="/">Home</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="about">About</NavLink>
+            <NavLink to="/about">About</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="beers">Beers</NavLink>
+            <NavLink to="/beers">Beers</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="breweries">Breweries</NavLink>
+            <NavLink to="/breweries">Breweries</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="contact">Contact</NavLink>
+            <NavLink to="/contact">Contact</NavLink>
           </NavItem>
         </NavbarMenu>
       </NavbarContainer>

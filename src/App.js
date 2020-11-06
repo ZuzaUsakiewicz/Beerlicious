@@ -17,11 +17,21 @@ function App() {
       <Layout>
         <Navbar />
         <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route path="/about" component={AboutPage} />
-          <Route path="/beers" component={BeersPage} />
-          <Route path="/breweries" component={BreweriesPage} />
-          <Route path="/contact" component={ContactPage} />
+          <Route exact path="/">
+            <HomePage />
+          </Route>
+          <Route exact path="/about">
+            <AboutPage />
+          </Route>
+          <Route exact path="/beers">
+            <BeersPage />
+          </Route>
+          <Route exact path="/breweries">
+            <BreweriesPage />
+          </Route>
+          <Route exact path="/contact">
+            <ContactPage />
+          </Route>
         </Switch>
         <Footer />
       </Layout>

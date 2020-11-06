@@ -1,13 +1,27 @@
-import React, { useContext } from "react";
-import { BeerContext } from "../../context";
+import React, { useState } from "react";
+import {
+  BeerItemContainer,
+  ModalBackground,
+  ButtonOpenModal,
+} from "./BeersPage.styled";
 
-const SingleBeer = () => {
-  const beers = useContext(BeerContext);
+const SingleBeer = ({ beer }) => {
+  const [modal, setModal] = useState(false);
+
+  const handleModal = () => {
+    setModal(!modal);
+  };
   return (
     <>
-      {beers.map((beer) => {
-        return <p>{beer.id}</p>;
-      })}
+      <BeerItemContainer key={beer.id}>
+        <h1>{beer.name}</h1>
+        <ModalBackground modal={modal}>
+          {modal && <h1> {beer.id}</h1>}
+        </ModalBackground>
+        <ButtonOpenModal onClick={() => handleModal()}>
+          open modal
+        </ButtonOpenModal>
+      </BeerItemContainer>
     </>
   );
 };

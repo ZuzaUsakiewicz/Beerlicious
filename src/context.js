@@ -14,7 +14,7 @@ const BeerAppProvider = ({ children }) => {
     const data = await fetch(url);
     const beers = await data.json();
     setBeers(beers);
-    console.log(beers);
+    // console.log(beers);
   };
   return <BeerContext.Provider value={beers}>{children}</BeerContext.Provider>;
 };

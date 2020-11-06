@@ -49,7 +49,7 @@ const NewBeerSection = () => {
                   <Description>{item.description}</Description>
 
                   {item.ingredients.malt.map((i) => {
-                    return <p>{i.name}</p>;
+                    return <p key={i.name}>{i.name}</p>;
                   })}
                 </TextContent>
                 <ButtonContainer>
