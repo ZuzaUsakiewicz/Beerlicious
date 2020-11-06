@@ -36,6 +36,7 @@ const NewBeerSection = () => {
               </ImageContainer>
               <BeerInfoContainer>
                 <TextContent>
+                  <p>{item.tagline}</p>
                   <BeerName>{item.name}</BeerName>
                   <IconAndText>
                     <GiHops />
@@ -46,6 +47,10 @@ const NewBeerSection = () => {
                     <span>{item.abv}</span>
                   </IconAndText>
                   <Description>{item.description}</Description>
+
+                  {item.ingredients.malt.map((i) => {
+                    return <p>{i.name}</p>;
+                  })}
                 </TextContent>
                 <ButtonContainer>
                   <Button primary to="beers">
