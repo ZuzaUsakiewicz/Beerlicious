@@ -53,7 +53,7 @@ const NewBeerSection = () => {
                   })}
                 </TextContent>
                 <ButtonContainer>
-                  <Button primary to="beers">
+                  <Button primary={true} to="/beers">
                     show more
                   </Button>
                 </ButtonContainer>
