@@ -5,10 +5,14 @@ import {
   ModalWrapper,
   ButtonWrapper,
   BeerCardWrapper,
-  TextWrapper,
+  InfoWrapper,
   BeerImageWrapper,
   BeerImage,
   BeerNames,
+  BeerDetails,
+  Name,
+  Tagline,
+  Description,
 } from "./BeersPage.styled";
 import { Button } from "../Button/Button";
 
@@ -39,17 +43,19 @@ const SingleBeer = ({ beer }) => {
                   close
                 </Button>
               </ButtonWrapper>
-              <TextWrapper>
-                <h1> {beer.name}</h1>
-                <p>{beer.description}</p>
-                {/* <img src={beer.image_url} alt={beer.name} /> */}
-              </TextWrapper>
+              <InfoWrapper>
+                <BeerImageWrapper>
+                  <BeerImage src={beer.image_url} alt={beer.name} />
+                </BeerImageWrapper>
+                <BeerDetails>
+                  <Name>{beer.name}</Name>
+                  <Tagline>{beer.tagline}</Tagline>
+                  <Description>{beer.description}</Description>
+                </BeerDetails>
+              </InfoWrapper>
             </ModalWrapper>
           )}
         </ModalBackground>
-        {/* <Button primary={true} onClick={() => handleModal()}>
-          details
-        </Button> */}
       </BeerItemContainer>
     </>
   );

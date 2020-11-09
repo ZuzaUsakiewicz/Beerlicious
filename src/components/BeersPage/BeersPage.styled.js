@@ -30,7 +30,7 @@ export const BeerItemContainer = styled.div`
   color: ${({ theme }) => theme.colors.dark};
   background: ${({ theme }) => theme.colors.primary};
   box-shadow: 2px 2px 20px 6px rgba(23, 55, 83, 0.6);
-  transition: border-bottom 0.3s ease-in, box-shadow 0.3s ease-in;
+  transition: border-bottom 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
   &:hover {
     border-bottom: 10px solid ${({ theme }) => theme.colors.dark};
     box-shadow: 2px 2px 25px 10px rgba(23, 55, 83, 0.6);
@@ -38,6 +38,30 @@ export const BeerItemContainer = styled.div`
   @media screen and (max-width: 960px) {
     max-width: 300px;
   }
+`;
+
+export const BeerCardWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+export const BeerNames = styled.div`
+  text-align: center;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 15px;
+`;
+
+export const BeerImageWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+`;
+
+export const BeerImage = styled.img`
+  height: 10rem;
+  width: auto;
 `;
 
 export const ModalBackground = styled.div`
@@ -58,13 +82,16 @@ export const ModalBackground = styled.div`
 `;
 
 export const ModalWrapper = styled.div`
-  width: 500px;
+  width: 700px;
   height: 80vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  padding: 10px 20px;
   color: ${({ theme }) => theme.colors.primary};
   background: ${({ theme }) => theme.colors.semidark};
+  box-shadow: -2px 2px 20px 10px rgba(11, 39, 63, 0.9);
   @media screen and (max-width: 960px) {
     max-width: 90vw;
   }
@@ -74,33 +101,33 @@ export const ButtonWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
   padding: 10px;
+  top: 10%;
+  right: 10%;
+  position: absolute;
+  @media screen and (max-width: 960px) {
+    top: 0;
+    right: 0;
+  }
 `;
 
-export const TextWrapper = styled.div`
-  width: 80%;
+export const InfoWrapper = styled.div`
+  width: 90%;
+  display: flex;
+`;
+
+export const BeerDetails = styled.div`
   display: flex;
   flex-direction: column;
-`;
-export const BeerCardWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 0 20px;
 `;
 
-export const BeerImageWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  padding: 2rem 0;
+export const Name = styled.h1`
+  font-size: ${({ theme }) => theme.fontSize.big};
 `;
 
-export const BeerImage = styled.img`
-  height: 10rem;
-  width: auto;
+export const Tagline = styled.h3`
+  font-size: ${({ theme }) => theme.fontSize.regular};
 `;
-
-export const BeerNames = styled.div`
-  text-align: center;
-  height: 100px;
-  width: 100%;
+export const Description = styled.p`
+  font-size: ${({ theme }) => theme.fontSize.small};
 `;
