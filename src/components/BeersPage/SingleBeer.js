@@ -27,7 +27,7 @@ const SingleBeer = ({ beer }) => {
             <BeerImage src={beer.image_url} alt={beer.name} />
           </BeerImageWrapper>
           <BeerNames>
-            <h3>{beer.name}</h3>
+            <h2>{beer.name}</h2>
             <h5>{beer.tagline}</h5>
           </BeerNames>
         </BeerCardWrapper>

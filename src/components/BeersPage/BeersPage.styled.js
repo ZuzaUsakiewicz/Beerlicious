@@ -21,17 +21,22 @@ export const BeerItemContainer = styled.div`
   height: 400px;
   border-bottom: 10px solid transparent;
   margin: 10px;
+  padding: 10px;
   cursor: pointer;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: space-between;
-  color: ${({ theme }) => theme.colors.primary};
-  background: ${({ theme }) => theme.colors.dark};
+  align-items: center;
+  color: ${({ theme }) => theme.colors.dark};
+  background: ${({ theme }) => theme.colors.primary};
   box-shadow: 2px 2px 20px 6px rgba(23, 55, 83, 0.6);
   transition: border-bottom 0.3s ease-in, box-shadow 0.3s ease-in;
   &:hover {
-    border-bottom: 10px solid ${({ theme }) => theme.colors.primary};
+    border-bottom: 10px solid ${({ theme }) => theme.colors.dark};
     box-shadow: 2px 2px 25px 10px rgba(23, 55, 83, 0.6);
+  }
+  @media screen and (max-width: 960px) {
+    max-width: 300px;
   }
 `;
 
@@ -54,12 +59,15 @@ export const ModalBackground = styled.div`
 
 export const ModalWrapper = styled.div`
   width: 500px;
-  height: 500px;
+  height: 80vh;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   color: ${({ theme }) => theme.colors.primary};
   background: ${({ theme }) => theme.colors.semidark};
+  @media screen and (max-width: 960px) {
+    max-width: 90vw;
+  }
 `;
 
 export const ButtonWrapper = styled.div`
@@ -76,19 +84,19 @@ export const TextWrapper = styled.div`
 export const BeerCardWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 `;
 
 export const BeerImageWrapper = styled.div`
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   padding: 2rem 0;
 `;
 
 export const BeerImage = styled.img`
-  width: 3rem;
-  height: auto;
+  height: 10rem;
+  width: auto;
 `;
 
 export const BeerNames = styled.div`
