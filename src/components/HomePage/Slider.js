@@ -44,7 +44,9 @@ const Slider = () => {
       <TextContainer>
         <Title>{title}</Title>
         <SliderParagraph>{text}</SliderParagraph>
-        <Button to={url}>read more</Button>
+        <Button primary={true} to={url}>
+          read more
+        </Button>
       </TextContainer>
       <ButtonPrev onClick={clickPrev}>
         <Previous />

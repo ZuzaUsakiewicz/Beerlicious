@@ -24,7 +24,7 @@ export const SliderContent = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  box-shadow: inset 0 0 0 1000px rgba(48, 149, 221, 0.836);
+  box-shadow: inset 0 0 0 1000px rgba(9, 67, 109, 0.63);
   transition: all 0.5s ease-in-out;
 `;
 
