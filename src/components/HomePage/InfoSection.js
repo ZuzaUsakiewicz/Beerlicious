@@ -2,11 +2,11 @@ import React from "react";
 import {
   InfoSectionContainer,
   InfoText,
-  Title,
   Informations,
   ImageContainer,
   Span,
 } from "./InfoSection.styled";
+import { Title } from "../../layout/Layout";
 
 const InfoSection = () => {
   return (

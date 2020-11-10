@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Title } from "./InfoSection.styled";
+import { Title } from "../../layout/Layout";
 import {
   SliderContent,
   ButtonPrev,

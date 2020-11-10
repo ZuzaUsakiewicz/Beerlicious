@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { BeerContext } from "../../context";
-import { Title } from "./InfoSection.styled";
+import { Title } from "../../layout/Layout";
 import {
   NewBeerContainer,
   ImageContainer,

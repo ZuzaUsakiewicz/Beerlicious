@@ -1,6 +1,6 @@
 import React from "react";
 import AllBeers from "../components/BeersPage/AllBeers";
-import { Title } from "../components/HomePage/InfoSection.styled";
+import { Title } from "../layout/Layout";
 import { BeersPageContainer } from "../components/BeersPage/BeersPage.styled";
 
 const BeersPage = () => {

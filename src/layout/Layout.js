@@ -26,4 +26,29 @@ const Layout = ({ children }) => (
     </>
   </ThemeProvider>
 );
+
+export const Title = styled.h1`
+  color: ${({ theme }) => theme.colors.primary};
+  line-height: 4rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: ${({ theme }) => theme.fontSize.huge};
+  position: relative;
+  &:after {
+    position: absolute;
+    content: "";
+    bottom: -20px;
+    right: 0;
+    left: 0;
+    width: 100px;
+    border-bottom: 10px solid ${({ theme }) => theme.colors.hover};
+  }
+  @media screen and (max-width: 960px) {
+    font-size: 2rem;
+    &:after {
+      bottom: -3px;
+    }
+  }
+`;
+
 export default Layout;
