@@ -10,6 +10,7 @@ import {
   BeerImage,
   BeerNames,
   BeerDetails,
+  Table,
   Name,
   Tagline,
   Description,
@@ -50,6 +51,10 @@ const SingleBeer = ({ beer }) => {
                 <BeerDetails>
                   <Name>{beer.name}</Name>
                   <Tagline>{beer.tagline}</Tagline>
+                  <Table>
+                    <h3>IBU: {beer.ibu}</h3>
+                    <h3>ABV: {beer.abv} %</h3>
+                  </Table>
                   <Description>{beer.description}</Description>
                 </BeerDetails>
               </InfoWrapper>
