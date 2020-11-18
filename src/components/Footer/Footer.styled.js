@@ -10,7 +10,6 @@ export const FooterContainer = styled.footer`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 3rem;
   @media screen and (max-width: 960px) {
     flex-direction: column;
     height: 40vh;
