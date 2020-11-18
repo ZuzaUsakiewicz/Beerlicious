@@ -43,6 +43,7 @@ export const NavLogo = styled(Link)`
 
 export const NavIcon = styled(GiBrokenBottle)`
   margin-right: 1rem;
+  color: ${({ theme }) => theme.colors.orange};
 `;
 
 export const HamburgerMenu = styled.div`
@@ -52,9 +53,9 @@ export const HamburgerMenu = styled.div`
     color: ${({ theme }) => theme.colors.primary};
     display: block;
     position: absolute;
-    top: 0;
+    top: 60%;
     right: 0;
-    transform: translate(-100%, 50%);
+    transform: translate(-100%, -50%);
     font-size: 2rem;
     cursor: pointer;
   }
@@ -85,15 +86,15 @@ export const NavItem = styled.li`
   border-bottom: 4px solid transparent;
   transition: border-bottom 0.5s ease-in-out;
   &:hover {
-    border-bottom: 4px solid ${({ theme }) => theme.colors.primary};
+    border-bottom: 4px solid ${({ theme }) => theme.colors.orange};
   }
-  &.active {
-    border-bottom: 4px solid ${({ theme }) => theme.colors.primary};
-  }
+  /* &.active {
+    border-bottom: 4px solid ${({ theme }) => theme.colors.orange};
+  } */
   @media screen and(max-width: 960px) {
     width: 100%;
     &:hover {
-      border: none;
+      border-bottom: 4px solid transparent;
     }
   }
 `;
@@ -106,9 +107,6 @@ export const NavLink = styled(Link)`
   padding: 0.5rem 1rem;
   height: 100%;
   transition: all 0.5s ease-in-out;
-  &:hover {
-    color: ${({ theme }) => theme.colors.hover};
-  }
   @media screen and (max-width: 960px) {
     text-align: center;
     padding: 2rem;
