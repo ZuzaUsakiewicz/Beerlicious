@@ -6,7 +6,7 @@ export const AboutSectionContainer = styled.section`
 
 export const TitleSection = styled.div`
   color: white;
-  padding: 2rem 1rem;
+  padding: 10rem 1rem;
   height: 80vh;
   background-image: url("https://images.unsplash.com/photo-1436076863939-06870fe779c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
   min-height: 500px;

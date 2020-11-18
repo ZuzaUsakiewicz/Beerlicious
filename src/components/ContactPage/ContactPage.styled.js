@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const ContactSectionContainer = styled.section`
   width: 100%;
   min-height: 100vh;
-  padding: 2rem 1rem;
+  padding: 10rem 1rem;
   color: ${({ theme }) => theme.colors.primary};
 `;
 

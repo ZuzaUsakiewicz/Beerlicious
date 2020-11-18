@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const BeersPageContainer = styled.section`
   width: 100%;
   min-height: 110vh;
-  padding: 2rem 1rem;
+  padding: 10rem 1rem;
 `;
 
 export const AllBeersContainer = styled.div`
