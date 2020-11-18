@@ -8,6 +8,7 @@ export const NewBeerContainer = styled.section`
   justify-content: center;
   align-items: center;
   padding: 0 3rem;
+  margin-bottom: 4rem;
   @media screen and (max-width: 960px) {
     height: 150vh;
     padding: 2rem 5px 0 5px;
