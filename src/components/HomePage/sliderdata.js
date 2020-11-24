@@ -22,7 +22,7 @@ const sliderdata = [
     img:
       "https://images.unsplash.com/photo-1549044466-404f19605ddc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
     title: "Slider three",
-    url: "/breweries",
+    url: "/brewpub",
     text:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, repellat. Nam obcaecati ipsam sit harum aspernatur amet quidem, ratione id!",
   },

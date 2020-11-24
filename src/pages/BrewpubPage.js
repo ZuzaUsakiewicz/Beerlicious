@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { BreweriesPageContainer } from "../components/BreweriesPage/BreweriesPage.styled";
 import { Title } from "../layout/Layout";
 
-const BreweriesPage = () => {
+const BrewpubPage = () => {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [breweries, setBreweries] = useState([]);
@@ -38,7 +38,7 @@ const BreweriesPage = () => {
   } else {
     return (
       <BreweriesPageContainer>
-        <Title>Breweries</Title>
+        <Title>Brewpubs</Title>
         {breweries.map((brew) => {
           return <p>{brew.name}</p>;
         })}
@@ -47,4 +47,4 @@ const BreweriesPage = () => {
   }
 };
 
-export default BreweriesPage;
+export default BrewpubPage;
