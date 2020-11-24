@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { BreweriesPageContainer } from "../components/BreweriesPage/BreweriesPage.styled";
+import {
+  BreweriesPageContainer,
+  BrewContentContainer,
+  BrewLink,
+} from "../components/BreweriesPage/BreweriesPage.styled";
 import { Title } from "../layout/Layout";
 
 const BrewpubPage = () => {
@@ -39,9 +43,15 @@ const BrewpubPage = () => {
     return (
       <BreweriesPageContainer>
         <Title>Brewpubs</Title>
-        {breweries.map((brew) => {
-          return <p>{brew.name}</p>;
-        })}
+        <BrewContentContainer>
+          {breweries.map((brew) => {
+            return (
+              <BrewLink target="blank" href={brew.website_url}>
+                {brew.name}
+              </BrewLink>
+            );
+          })}
+        </BrewContentContainer>
       </BreweriesPageContainer>
     );
   }
