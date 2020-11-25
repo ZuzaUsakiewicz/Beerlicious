@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 export const ContactSectionContainer = styled.section`
   width: 100%;
@@ -44,13 +43,4 @@ export const IconWrapper = styled.div`
   width: 30%;
   justify-content: space-between;
   padding-top: 1rem;
-`;
-
-export const IconLink = styled(Link)`
-  color: ${({ theme }) => theme.colors.primary};
-  font-size: ${({ theme }) => theme.fontSize.regular};
-  transition: color 0.2s ease-in;
-  &:hover {
-    color: ${({ theme }) => theme.colors.orange};
-  }
 `;

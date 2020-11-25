@@ -7,8 +7,8 @@ import {
   MapWrapper,
   Map,
   IconWrapper,
-  IconLink,
 } from "../components/ContactPage/ContactPage.styled";
+import { IconLink } from "../layout/Layout";
 import map from "../components/ContactPage/worldmap.svg";
 import {
   FaFacebookSquare,
@@ -35,16 +35,16 @@ const ContactPage = () => {
             visit us: <b>The City 66 666 City, World</b>
           </p>
           <IconWrapper>
-            <IconLink to="/">
+            <IconLink href="https://google.com" target="_blank">
               <FaFacebookSquare />
             </IconLink>
-            <IconLink to="/">
+            <IconLink href="https://google.com" target="_blank">
               <FaBeer />
             </IconLink>
-            <IconLink to="/">
+            <IconLink href="https://google.com" target="_blank">
               <FaInstagram />
             </IconLink>
-            <IconLink to="/">
+            <IconLink href="https://google.com" target="_blank">
               <FaTwitterSquare />
             </IconLink>
           </IconWrapper>

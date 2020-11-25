@@ -9,7 +9,8 @@ import {
   IconsContainer,
   LogoBottle,
 } from "./Footer.styled";
-import { IconWrapper, IconLink } from "../ContactPage/ContactPage.styled";
+import { IconWrapper } from "../ContactPage/ContactPage.styled";
+import { IconLink } from "../../layout/Layout";
 import {
   FaFacebookSquare,
   FaBeer,
@@ -41,16 +42,16 @@ const Footer = () => {
       </Copyright>
       <IconsContainer>
         <IconWrapper>
-          <IconLink to="/">
+          <IconLink href="https://google.com" target="_blank">
             <FaFacebookSquare />
           </IconLink>
-          <IconLink to="/">
+          <IconLink href="https://google.com" target="_blank">
             <FaBeer />
           </IconLink>
-          <IconLink to="/">
+          <IconLink href="https://google.com" target="_blank">
             <FaInstagram />
           </IconLink>
-          <IconLink to="/">
+          <IconLink href="https://google.com" target="_blank">
             <FaTwitterSquare />
           </IconLink>
         </IconWrapper>

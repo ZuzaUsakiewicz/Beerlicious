@@ -51,5 +51,14 @@ export const Title = styled.h1`
     }
   }
 `;
+export const IconLink = styled.a`
+  cursor: pointer;
+  color: ${({ theme }) => theme.colors.primary};
+  font-size: ${({ theme }) => theme.fontSize.regular};
+  transition: color 0.2s ease-in;
+  &:hover {
+    color: ${({ theme }) => theme.colors.orange};
+  }
+`;
 
 export default Layout;
