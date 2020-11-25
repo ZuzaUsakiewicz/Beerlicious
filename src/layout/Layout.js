@@ -54,8 +54,10 @@ export const Title = styled.h1`
 export const IconLink = styled.a`
   cursor: pointer;
   color: ${({ theme }) => theme.colors.primary};
-  font-size: ${({ theme }) => theme.fontSize.regular};
+  font-size: ${({ theme }) => theme.fontSize.small};
   transition: color 0.2s ease-in;
+  padding: ${(props) => (props.navbar ? "0 10px" : "")};
+
   &:hover {
     color: ${({ theme }) => theme.colors.orange};
   }

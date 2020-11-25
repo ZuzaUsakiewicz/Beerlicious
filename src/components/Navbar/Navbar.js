@@ -9,7 +9,15 @@ import {
   NavbarMenu,
   NavItem,
   NavLink,
+  NavbarIcons,
 } from "./Navbar.styled";
+import { IconLink } from "../../layout/Layout";
+import {
+  FaFacebookSquare,
+  FaBeer,
+  FaInstagram,
+  FaTwitterSquare,
+} from "react-icons/fa";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -51,8 +59,24 @@ function Navbar() {
             <NavLink to="/brewpub">Brewpubs</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="/contact">Contact</NavLink>
+            <NavLink to="/contact" padright>
+              Contact
+            </NavLink>
           </NavItem>
+          <NavbarIcons>
+            <IconLink navbar href="https://google.com" target="_blank">
+              <FaFacebookSquare />
+            </IconLink>
+            <IconLink navbar href="https://google.com" target="_blank">
+              <FaBeer />
+            </IconLink>
+            <IconLink navbar href="https://google.com" target="_blank">
+              <FaInstagram />
+            </IconLink>
+            <IconLink navbar href="https://google.com" target="_blank">
+              <FaTwitterSquare />
+            </IconLink>
+          </NavbarIcons>
         </NavbarMenu>
       </NavbarContainer>
     </Nav>

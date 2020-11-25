@@ -5,8 +5,11 @@ import { Link } from "react-router-dom";
 export const Nav = styled.nav`
   margin: auto;
   padding: 0 2rem;
-  background: ${({ scrollNav }) => (scrollNav ? "#173753" : "transparent")};
+  background: ${({ scrollNav }) =>
+    scrollNav ? "rgba(23, 55, 83, 0.7)" : "transparent"};
   height: ${({ scrollNav }) => (scrollNav ? "80px" : "100px")};
+  box-shadow: ${({ scrollNav }) =>
+    scrollNav ? "0 2px 6px 2px rgb(23, 55, 83)" : ""};
   max-width: 1600px;
   display: flex;
   justify-content: center;
@@ -15,7 +18,8 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 999;
-  transition: background 0.5s ease-in-out, height 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out, height 0.5s ease-in-out,
+    box-shadow 0.5s ease;
   @media screen and (max-width: 960px) {
     padding: 0;
     background: ${({ theme }) => theme.colors.dark};
@@ -93,6 +97,7 @@ export const NavItem = styled.li`
   } */
   @media screen and(max-width: 960px) {
     width: 100%;
+    border: none;
     &:hover {
       border-bottom: 4px solid transparent;
     }
@@ -112,5 +117,17 @@ export const NavLink = styled(Link)`
     padding: 2rem;
     width: 100%;
     display: table;
+  }
+`;
+
+export const NavbarIcons = styled.div`
+  height: 80px;
+  width: 120%;
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 30px;
+  @media screen and (max-width: 960px) {
+    justify-content: center;
+    padding: 20px 0;
   }
 `;
