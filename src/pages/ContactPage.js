@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import gsap from "gsap";
 import { Title } from "../layout/Layout";
 import {
   ContactSectionContainer,
@@ -18,8 +19,18 @@ import {
 } from "react-icons/fa";
 
 const ContactPage = () => {
+  const contactRef = useRef(null);
+
+  useEffect(() => {
+    gsap.from(contactRef.current, {
+      delay: 2,
+      duration: 2,
+      autoAlpha: 0,
+      ease: "power1.in",
+    });
+  }, []);
   return (
-    <ContactSectionContainer>
+    <ContactSectionContainer ref={contactRef}>
       <Title>Contact</Title>
       <ContactWrapper>
         <TextWrapper>

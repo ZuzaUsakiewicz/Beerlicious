@@ -1,4 +1,5 @@
-import React from "react";
+import gsap from "gsap/gsap-core";
+import React, { useRef, useEffect } from "react";
 import {
   AboutSectionContainer,
   TitleSection,
@@ -11,8 +12,17 @@ import {
 import { Title } from "../layout/Layout";
 
 const AboutPage = () => {
+  const aboutRef = useRef(null);
+  useEffect(() => {
+    gsap.from(aboutRef.current, {
+      duration: 2,
+      delay: 2,
+      autoAlpha: 0,
+      ease: "power3.out",
+    });
+  }, []);
   return (
-    <AboutSectionContainer>
+    <AboutSectionContainer ref={aboutRef}>
       <TitleSection>
         <Title>About</Title>
         <Text>

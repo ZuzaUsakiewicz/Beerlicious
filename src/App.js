@@ -13,6 +13,7 @@ import { gsap } from "gsap";
 
 function App() {
   const appRef = useRef(null);
+
   useEffect(() => {
     gsap.from(appRef.current, {
       duration: 3,
@@ -21,6 +22,7 @@ function App() {
       ease: "power3.in",
     });
   }, []);
+
   return (
     <div ref={appRef}>
       <ScrollToTop />
