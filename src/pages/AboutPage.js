@@ -1,4 +1,3 @@
-import gsap from "gsap/gsap-core";
 import React, { useRef, useEffect } from "react";
 import {
   AboutSectionContainer,
@@ -10,19 +9,15 @@ import {
   Paragraph,
 } from "../components/AboutPage/AboutPage.styled";
 import { Title } from "../layout/Layout";
+import { aboutIntro } from "../animations/Animate";
 
 const AboutPage = () => {
-  const aboutRef = useRef(null);
+  let about = useRef(null);
   useEffect(() => {
-    gsap.from(aboutRef.current, {
-      duration: 2,
-      delay: 2,
-      autoAlpha: 0,
-      ease: "power3.out",
-    });
+    aboutIntro(about);
   }, []);
   return (
-    <AboutSectionContainer ref={aboutRef}>
+    <AboutSectionContainer ref={(el) => (about = el)}>
       <TitleSection>
         <Title>About</Title>
         <Text>
