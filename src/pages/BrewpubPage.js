@@ -62,7 +62,7 @@ const BrewpubPage = () => {
         <BrewContentContainer>
           {breweries.map((brew) => {
             return (
-              <BrewLink target="blank" href={brew.website_url}>
+              <BrewLink target="blank" href={brew.website_url} key={brew.id}>
                 {brew.name}
               </BrewLink>
             );

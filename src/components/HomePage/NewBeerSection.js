@@ -30,7 +30,7 @@ const NewBeerSection = () => {
       <BeerWrapper>
         {oneBeer.map((item) => {
           return (
-            <>
+            <React.Fragment key={item.id}>
               <ImageContainer>
                 <BeerImage src={item.image_url} alt={item.name} />
               </ImageContainer>
@@ -58,7 +58,7 @@ const NewBeerSection = () => {
                   </Button>
                 </ButtonContainer>
               </BeerInfoContainer>
-            </>
+            </React.Fragment>
           );
         })}
       </BeerWrapper>
