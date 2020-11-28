@@ -10,6 +10,7 @@ import { Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import { gsap } from "gsap";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
   const appRef = useRef(null);
@@ -28,23 +29,15 @@ function App() {
       <ScrollToTop />
       <Layout>
         <Navbar />
-        <Switch>
-          <Route exact path="/">
-            <HomePage />
-          </Route>
-          <Route exact path="/about">
-            <AboutPage />
-          </Route>
-          <Route exact path="/beers">
-            <BeersPage />
-          </Route>
-          <Route exact path="/brewpub">
-            <BrewpubPage />
-          </Route>
-          <Route exact path="/contact">
-            <ContactPage />
-          </Route>
-        </Switch>
+        <AnimatePresence exitBeforeEnter>
+          <Switch>
+            <Route exact path="/" component={HomePage} />
+            <Route exact path="/about" component={AboutPage} />
+            <Route exact path="/beers" component={BeersPage} />
+            <Route exact path="/brewpub" component={BrewpubPage} />
+            <Route exact path="/contact" component={ContactPage} />
+          </Switch>
+        </AnimatePresence>
         <Footer />
       </Layout>
     </div>

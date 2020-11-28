@@ -1,10 +1,10 @@
-import gsap from "gsap";
-
-export const aboutIntro = (element) => {
-  gsap.from(element, {
-    duration: 2,
-    delay: 2,
-    autoAlpha: 0,
-    ease: "power3.out",
-  });
+export const pageTransitions = {
+  in: {
+    opacity: 1,
+    y: 0,
+  },
+  out: {
+    opacity: 0,
+    y: "-100vh",
+  },
 };

@@ -1,5 +1,4 @@
-import React, { useRef, useEffect } from "react";
-import gsap from "gsap";
+import React from "react";
 import { Title } from "../layout/Layout";
 import {
   ContactSectionContainer,
@@ -17,20 +16,16 @@ import {
   FaInstagram,
   FaTwitterSquare,
 } from "react-icons/fa";
+import { pageTransitions } from "../animations/Animate";
 
 const ContactPage = () => {
-  const contactRef = useRef(null);
-
-  useEffect(() => {
-    gsap.from(contactRef.current, {
-      delay: 2,
-      duration: 2,
-      autoAlpha: 0,
-      ease: "power1.in",
-    });
-  }, []);
   return (
-    <ContactSectionContainer ref={contactRef}>
+    <ContactSectionContainer
+      initial="out"
+      animate="in"
+      exit="out"
+      variants={pageTransitions}
+    >
       <Title>Contact</Title>
       <ContactWrapper>
         <TextWrapper>

@@ -1,6 +1,6 @@
 import styled from "styled-components";
-
-export const AboutSectionContainer = styled.section`
+import { motion } from "framer-motion";
+export const AboutSectionContainer = styled(motion.section)`
   width: 100%;
 `;
 

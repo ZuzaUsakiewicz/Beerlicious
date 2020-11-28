@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import {
   AboutSectionContainer,
   TitleSection,
@@ -9,15 +9,16 @@ import {
   Paragraph,
 } from "../components/AboutPage/AboutPage.styled";
 import { Title } from "../layout/Layout";
-import { aboutIntro } from "../animations/Animate";
+import { pageTransitions } from "../animations/Animate";
 
 const AboutPage = () => {
-  let about = useRef(null);
-  useEffect(() => {
-    aboutIntro(about);
-  }, []);
   return (
-    <AboutSectionContainer ref={(el) => (about = el)}>
+    <AboutSectionContainer
+      initial="out"
+      animate="in"
+      exit="out"
+      variants={pageTransitions}
+    >
       <TitleSection>
         <Title>About</Title>
         <Text>

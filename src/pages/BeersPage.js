@@ -1,21 +1,17 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import AllBeers from "../components/BeersPage/AllBeers";
 import { Title } from "../layout/Layout";
 import { BeersPageContainer } from "../components/BeersPage/BeersPage.styled";
-import gsap from "gsap/gsap-core";
+import { pageTransitions } from "../animations/Animate";
 
 const BeersPage = () => {
-  const beerRef = useRef(null);
-  useEffect(() => {
-    gsap.from(beerRef.current, {
-      delay: 2,
-      duration: 2,
-      autoAlpha: 0,
-      ease: "power2.in",
-    });
-  }, []);
   return (
-    <BeersPageContainer ref={beerRef}>
+    <BeersPageContainer
+      initial="out"
+      animate="in"
+      exit="out"
+      variants={pageTransitions}
+    >
       <Title>our beers</Title>
       <AllBeers />
     </BeersPageContainer>

@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const ContactSectionContainer = styled.section`
+export const ContactSectionContainer = styled(motion.section)`
   width: 100%;
   min-height: 100vh;
   padding: 10rem 1rem;

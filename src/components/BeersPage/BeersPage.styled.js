@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const BeersPageContainer = styled.section`
+export const BeersPageContainer = styled(motion.section)`
   width: 100%;
   min-height: 110vh;
   padding: 10rem 1rem;
