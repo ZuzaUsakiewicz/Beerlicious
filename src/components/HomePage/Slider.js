@@ -11,6 +11,7 @@ import {
 } from "./HeroSection.styled";
 import { Button } from "../Button/Button";
 import sliderdata from "./sliderdata";
+import { sliderTransition } from "../../animations/Animate";
 
 const Slider = () => {
   const [index, setIndex] = useState(0);
@@ -40,7 +41,14 @@ const Slider = () => {
   };
 
   return (
-    <SliderContent img={img} key={id}>
+    <SliderContent
+      initial="out"
+      animate="in"
+      exit="out"
+      variants={sliderTransition}
+      img={img}
+      key={id}
+    >
       <TextContainer>
         <Title>{title}</Title>
         <SliderParagraph>{text}</SliderParagraph>

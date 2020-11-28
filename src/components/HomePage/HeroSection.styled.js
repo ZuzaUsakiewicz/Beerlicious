@@ -1,5 +1,6 @@
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const MainSection = styled.section`
   height: 100vh;
@@ -11,9 +12,10 @@ export const SliderContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 `;
 
-export const SliderContent = styled.div`
+export const SliderContent = styled(motion.div)`
   position: relative;
   display: flex;
   flex-direction: column;
@@ -26,7 +28,6 @@ export const SliderContent = styled.div`
   background-position: center;
   background-size: cover;
   box-shadow: inset 0 0 0 1000px rgba(9, 67, 109, 0.63);
-  transition: all 0.5s ease-in-out;
 `;
 
 export const ButtonPrev = styled.button`
