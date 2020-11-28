@@ -59,7 +59,7 @@ function Navbar() {
             <NavLink to="/brewpub">Brewpubs</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="/contact" padright>
+            <NavLink to="/contact" padright="true">
               Contact
             </NavLink>
           </NavItem>
