@@ -5,7 +5,7 @@ export const pageTransitions = {
   },
   out: {
     opacity: 0,
-    y: "-100vh",
+    y: "-50%",
   },
 };
 

@@ -16,7 +16,8 @@ function App() {
   const appRef = useRef(null);
 
   useEffect(() => {
-    gsap.from(appRef.current, {
+    const tl = gsap.timeline();
+    tl.from(appRef.current, {
       duration: 3,
       delay: 2,
       autoAlpha: 0,

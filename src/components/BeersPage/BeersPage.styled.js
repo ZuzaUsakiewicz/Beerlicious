@@ -5,6 +5,7 @@ export const BeersPageContainer = styled(motion.section)`
   width: 100%;
   min-height: 110vh;
   padding: 10rem 1rem;
+  position: relative;
 `;
 
 export const AllBeersContainer = styled.div`
@@ -67,10 +68,11 @@ export const BeerImage = styled.img`
 
 export const ModalBackground = styled.div`
   width: 100%;
+  height: 100%;
   opacity: ${({ modal }) => (modal ? 1 : 0)};
   pointer-events: ${({ modal }) => (modal ? "showing" : "none")};
   transition: opacity 0.5s ease-in-out;
-  position: fixed;
+  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
@@ -83,6 +85,7 @@ export const ModalBackground = styled.div`
 `;
 
 export const ModalWrapper = styled.div`
+  position: absolute;
   width: 700px;
   height: 80vh;
   display: flex;
