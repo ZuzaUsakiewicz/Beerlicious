@@ -7,7 +7,7 @@ export const AboutSectionContainer = styled(motion.section)`
 export const TitleSection = styled.div`
   color: white;
   padding: 10rem 1rem;
-  height: 80vh;
+  height: 100vh;
   background-image: url("https://images.unsplash.com/photo-1436076863939-06870fe779c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
   box-shadow: inset 0 0 0 1000px rgba(9, 67, 109, 0.63);
   background-attachment: fixed;
@@ -15,7 +15,7 @@ export const TitleSection = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   @media screen and (max-width: 960px) {
-    padding: 1rem 0.5rem;
+    padding: 10rem 0.5rem;
   }
 `;
 
