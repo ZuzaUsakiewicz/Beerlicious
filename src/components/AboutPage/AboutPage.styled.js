@@ -9,7 +9,6 @@ export const TitleSection = styled.div`
   padding: 10rem 1rem;
   height: 80vh;
   background-image: url("https://images.unsplash.com/photo-1436076863939-06870fe779c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
-  min-height: 500px;
   box-shadow: inset 0 0 0 1000px rgba(9, 67, 109, 0.63);
   background-attachment: fixed;
   background-position: 0 0;

@@ -11,7 +11,6 @@ const GlobalStyle = createGlobalStyle`
 body {
   font-family: 'Teko', sans-serif;
   background: ${({ theme }) => theme.colors.semidark};
-  margin-top: -100px;
 }
 `;
 const Container = styled.div`

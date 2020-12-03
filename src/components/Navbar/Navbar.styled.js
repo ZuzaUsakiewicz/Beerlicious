@@ -15,8 +15,10 @@ export const Nav = styled.nav`
   justify-content: center;
   align-items: center;
   font-size: ${({ theme }) => theme.fontSize.regular};
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 999;
   transition: background 0.5s ease-in-out, height 0.5s ease-in-out,
     box-shadow 0.5s ease;
