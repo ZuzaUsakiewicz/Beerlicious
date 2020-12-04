@@ -10,7 +10,10 @@ import { Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import { gsap } from "gsap";
+import { TextPlugin } from "gsap/TextPlugin";
 import { AnimatePresence } from "framer-motion";
+
+gsap.registerPlugin(TextPlugin);
 
 function App() {
   const appRef = useRef(null);

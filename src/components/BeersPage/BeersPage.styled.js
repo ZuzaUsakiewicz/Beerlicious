@@ -5,7 +5,6 @@ export const BeersPageContainer = styled(motion.section)`
   width: 100%;
   min-height: 110vh;
   padding: 10rem 1rem;
-  position: relative;
 `;
 
 export const AllBeersContainer = styled.div`
@@ -47,6 +46,7 @@ export const BeerCardWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 `;
 export const BeerNames = styled.div`
   text-align: center;
@@ -72,11 +72,8 @@ export const ModalBackground = styled.div`
   opacity: ${({ modal }) => (modal ? 1 : 0)};
   pointer-events: ${({ modal }) => (modal ? "showing" : "none")};
   transition: opacity 0.5s ease-in-out;
-  position: absolute;
-  top: 0;
-  bottom: 0;
+  position: fixed;
   left: 0;
-  right: 0;
   background: ${({ theme }) => theme.colors.modalBG};
   z-index: 999;
   display: flex;

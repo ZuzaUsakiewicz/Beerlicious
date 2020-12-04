@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { AiOutlineCloseSquare, AiOutlineMenu } from "react-icons/ai";
 import {
   Nav,
@@ -18,8 +18,10 @@ import {
   FaInstagram,
   FaTwitterSquare,
 } from "react-icons/fa";
+import gsap from "gsap/gsap-core";
 
 function Navbar() {
+  const navRef = useRef(null);
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
 
@@ -35,10 +37,18 @@ function Navbar() {
   useEffect(() => {
     window.addEventListener("scroll", changeNav);
   }, []);
-
+  useEffect(() => {
+    gsap.from(navRef.current, {
+      y: "-100px",
+      duration: 3,
+      delay: 3,
+      autoAlpha: 0,
+      ease: "power1.in",
+    });
+  });
   return (
     <Nav scrollNav={scrollNav}>
-      <NavbarContainer>
+      <NavbarContainer ref={navRef}>
         <NavLogo to="/">
           <NavIcon /> Beerlicious
         </NavLogo>
