@@ -45,7 +45,7 @@ function Navbar() {
       autoAlpha: 0,
       ease: "power1.in",
     });
-  });
+  }, []);
   return (
     <Nav scrollNav={scrollNav}>
       <NavbarContainer ref={navRef}>
