@@ -5,17 +5,15 @@ export const pageTransitions = {
   },
   out: {
     opacity: 0,
-    y: "-50%",
+    y: "-10%",
   },
 };
 
 export const sliderTransition = {
   in: {
     opacity: 1,
-    x: 0,
   },
   out: {
     opacity: 0,
-    x: "-100%",
   },
 };
