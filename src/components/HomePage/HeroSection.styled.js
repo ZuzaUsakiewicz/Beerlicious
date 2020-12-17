@@ -85,7 +85,7 @@ export const Next = styled(FaAngleRight)`
 `;
 
 export const TextContainer = styled.div`
-  padding-top: 160px;
+  padding-top: 260px;
   width: 60%;
   height: 90%;
   @media screen and (max-width: 960px) {
