@@ -42,8 +42,10 @@ const Slider = () => {
   };
   useEffect(() => {
     gsap.to(titleRef.current, {
-      duration: 2,
+      duration: 4,
       delay: 6,
+      repeat: 1,
+      yoyo: true,
       text: {
         value: "Beerlicious tastes good!",
         delimiter: "",
