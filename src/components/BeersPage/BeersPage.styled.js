@@ -3,18 +3,16 @@ import { motion } from "framer-motion";
 
 export const BeersPageContainer = styled(motion.section)`
   width: 100%;
-  min-height: 110vh;
-  padding: 10rem 1rem;
+  padding: 10rem 1rem 1rem 1rem;
 `;
 
 export const AllBeersContainer = styled.div`
-  height: 100%;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 3rem 1rem;
+  padding: 5rem 1rem 0 1rem;
 `;
 
 export const BeerItemContainer = styled.div`
@@ -68,14 +66,14 @@ export const BeerImage = styled.img`
 
 export const ModalBackground = styled.div`
   width: 100%;
-  height: 100%;
+  height: ${({ modal }) => (modal ? "200vh" : 0)};
   opacity: ${({ modal }) => (modal ? 1 : 0)};
   pointer-events: ${({ modal }) => (modal ? "showing" : "none")};
   transition: opacity 0.5s ease-in-out;
   position: fixed;
   left: 0;
   background: ${({ theme }) => theme.colors.modalBG};
-  z-index: 999;
+  z-index: 998;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,6 +81,8 @@ export const ModalBackground = styled.div`
 
 export const ModalWrapper = styled.div`
   position: absolute;
+  margin: 0 auto;
+  z-index: 999;
   width: 700px;
   height: 80vh;
   display: flex;
@@ -114,6 +114,7 @@ export const ButtonWrapper = styled.div`
 export const InfoWrapper = styled.div`
   width: 90%;
   display: flex;
+  justify-content: space-evenly;
 `;
 
 export const BeerDetails = styled.div`
@@ -130,11 +131,12 @@ export const Table = styled.div`
 `;
 
 export const Name = styled.h1`
-  font-size: ${({ theme }) => theme.fontSize.big};
+  font-size: ${({ theme }) => theme.fontSize.regular};
+  color: ${({ theme }) => theme.colors.orange};
 `;
 
 export const Tagline = styled.h3`
-  font-size: ${({ theme }) => theme.fontSize.regular};
+  font-size: ${({ theme }) => theme.fontSize.small};
 `;
 export const Description = styled.p`
   font-size: ${({ theme }) => theme.fontSize.small};
