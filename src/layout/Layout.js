@@ -9,8 +9,12 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
 }
 body {
-  font-family: 'Teko', sans-serif;
+  font-family: 'Tako', sans-serif;
   background: ${({ theme }) => theme.colors.semidark};
+}
+p{
+  font-family: 'Arial';
+  letter-spacing: 0.8px;
 }
 `;
 const Container = styled.div`
