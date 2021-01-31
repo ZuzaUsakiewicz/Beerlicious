@@ -19,7 +19,6 @@ import { Button } from "../Button/Button";
 
 const NewBeerSection = () => {
   const beers = useContext(BeerContext);
-  // console.log(beers);
   const oneBeer = beers.filter((beer) => {
     return beer.id === 10;
   });

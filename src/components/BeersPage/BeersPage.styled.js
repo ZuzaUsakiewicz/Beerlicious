@@ -66,14 +66,17 @@ export const BeerImage = styled.img`
 
 export const ModalBackground = styled.div`
   width: 100%;
-  height: ${({ modal }) => (modal ? "200vh" : 0)};
+  height: ${({ modal }) => (modal ? "100vh" : 0)};
   opacity: ${({ modal }) => (modal ? 1 : 0)};
   pointer-events: ${({ modal }) => (modal ? "showing" : "none")};
   transition: opacity 0.5s ease-in-out;
-  position: fixed;
+  position: absolute;
   left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
   background: ${({ theme }) => theme.colors.modalBG};
-  z-index: 998;
+  z-index: 999;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,7 +84,8 @@ export const ModalBackground = styled.div`
 
 export const ModalWrapper = styled.div`
   position: absolute;
-  margin: 0 auto;
+  cursor: auto;
+  margin-top: 5%;
   z-index: 999;
   width: 700px;
   height: 80vh;
@@ -95,6 +99,7 @@ export const ModalWrapper = styled.div`
   box-shadow: -2px 2px 20px 10px rgba(11, 39, 63, 0.9);
   @media screen and (max-width: 960px) {
     max-width: 90vw;
+    z-index: 999;
   }
 `;
 
