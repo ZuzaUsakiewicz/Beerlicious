@@ -8,7 +8,7 @@ export const InfoSectionContainer = styled.section`
   justify-content: center;
   align-items: center;
   @media screen and (max-width: 960px) {
-    height: 120vh;
+    min-height: 120vh;
     flex-direction: column;
     padding: 1rem;
   }
@@ -19,8 +19,9 @@ export const InfoText = styled.div`
   width: 50%;
   padding: 0 40px;
   @media screen and (max-width: 960px) {
+    height: 100%;
     width: 100%;
-    padding: 2rem 0;
+    padding: 2rem 0 0.2rem 0;
   }
 `;
 
@@ -31,7 +32,7 @@ export const Informations = styled.p`
   text-align: justify;
   font-weight: ${({ theme }) => theme.fontWeight.thin};
   @media screen and (max-width: 960px) {
-    font-size: ${({ theme }) => theme.fontSize.small};
+    font-size: ${({ theme }) => theme.fontSize.mobile};
   }
 `;
 export const ImageContainer = styled.div`
@@ -42,10 +43,6 @@ export const ImageContainer = styled.div`
   background-position: center;
   background-size: cover;
   box-shadow: -2px 2px 20px 10px rgba(23, 55, 83, 0.6);
-  @media screen and (max-width: 960px) {
-    width: 100%;
-    height: 60%;
-  }
 `;
 
 export const Span = styled.span`

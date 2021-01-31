@@ -13,6 +13,14 @@ export const SliderContainer = styled.div`
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
+  @media screen and (max-width: 960px) {
+    h1 {
+      font-size: 1.5rem;
+      letter-spacing: 0;
+      line-height: 1.2;
+      padding-bottom: 20px;
+    }
+  }
 `;
 
 export const SliderContent = styled(motion.div)`
@@ -44,7 +52,7 @@ export const ButtonPrev = styled.button`
     background: rgba(0, 0, 0, 0.6);
   }
   @media screen and (max-width: 960px) {
-    top: 70%;
+    top: 80%;
     left: 2%;
   }
 `;
@@ -63,7 +71,7 @@ export const ButtonNext = styled.button`
     background: rgba(0, 0, 0, 0.6);
   }
   @media screen and (max-width: 960px) {
-    top: 70%;
+    top: 80%;
     right: 2%;
   }
 `;
@@ -72,7 +80,7 @@ export const Previous = styled(FaAngleLeft)`
   color: ${({ theme }) => theme.colors.primary};
   font-size: 3rem;
   @media screen and (max-width: 960px) {
-    font-size: ${({ theme }) => theme.fontSize.small};
+    font-size: ${({ theme }) => theme.fontSize.regular};
   }
 `;
 
@@ -80,7 +88,7 @@ export const Next = styled(FaAngleRight)`
   color: ${({ theme }) => theme.colors.primary};
   font-size: 3rem;
   @media screen and (max-width: 960px) {
-    font-size: ${({ theme }) => theme.fontSize.small};
+    font-size: ${({ theme }) => theme.fontSize.regular};
   }
 `;
 
@@ -89,22 +97,17 @@ export const TextContainer = styled.div`
   width: 60%;
   height: 90%;
   @media screen and (max-width: 960px) {
-    width: 70%;
+    padding-top: 180px;
+    width: 80%;
+    font-size: ${({ theme }) => theme.fontSize.small};
   }
 `;
-
-// export const SliderTitle = styled.h1`
-//   font-size: ${({ theme }) => theme.fontSize.huge};
-//   @media screen and (max-width: 960px) {
-//     font-size: ${({ theme }) => theme.fontSize.regular};
-//   }
-// `;
 
 export const SliderParagraph = styled.p`
   padding: 2rem 0;
   font-weight: ${({ theme }) => theme.fontWeight.thin};
   font-size: ${({ theme }) => theme.fontSize.regular};
   @media screen and (max-width: 960px) {
-    font-size: ${({ theme }) => theme.fontSize.small};
+    font-size: 15px;
   }
 `;

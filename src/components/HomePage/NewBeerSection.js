@@ -12,6 +12,7 @@ import {
   BeerName,
   BeerWrapper,
   Description,
+  Ingredients,
 } from "./NewBeerSection.styled";
 import { GiHops } from "react-icons/gi";
 import { FaPercentage } from "react-icons/fa";
@@ -46,10 +47,11 @@ const NewBeerSection = () => {
                     <span>{item.abv}</span>
                   </IconAndText>
                   <Description>{item.description}</Description>
-
-                  {item.ingredients.malt.map((i) => {
-                    return <p key={i.name}>{i.name}</p>;
-                  })}
+                  <Ingredients>
+                    {item.ingredients.malt.map((i) => {
+                      return <p key={i.name}>{i.name}</p>;
+                    })}
+                  </Ingredients>
                 </TextContent>
                 <ButtonContainer>
                   <Button primary="true" to="/beers">

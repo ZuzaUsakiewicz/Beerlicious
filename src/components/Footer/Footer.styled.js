@@ -44,6 +44,10 @@ export const LinkTo = styled(Link)`
   &:hover {
     color: ${({ theme }) => theme.colors.primary};
   }
+  @media screen and (max-width: 960px) {
+    font-size: ${({ theme }) => theme.fontSize.mobile};
+    padding-bottom: 0.2rem;
+  }
 `;
 
 export const Copyright = styled.div`
@@ -51,6 +55,8 @@ export const Copyright = styled.div`
   text-align: center;
   @media screen and (max-width: 960px) {
     width: 100%;
+    font-size: ${({ theme }) => theme.fontSize.mobile};
+    padding: 0.6rem 0;
   }
 `;
 

@@ -15,7 +15,7 @@ body {
 }
 p{
   font-family: 'Arial';
-  letter-spacing: 0.8px;
+  /* letter-spacing: 0.6px; */
 }
 `;
 const Container = styled.div`
@@ -49,7 +49,7 @@ export const Title = styled.h1`
     border-bottom: 10px solid ${({ theme }) => theme.colors.hover};
   }
   @media screen and (max-width: 960px) {
-    font-size: 2rem;
+    font-size: 1.3rem;
     &:after {
       bottom: -3px;
     }

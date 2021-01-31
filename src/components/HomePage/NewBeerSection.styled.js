@@ -2,16 +2,16 @@ import styled from "styled-components";
 
 export const NewBeerContainer = styled.section`
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 3rem;
+  padding: 1rem 3rem;
   margin-bottom: 4rem;
   @media screen and (max-width: 960px) {
-    height: 150vh;
-    padding: 2rem 5px 0 5px;
+    min-height: 200vh;
+    padding: 0.4rem 5px 0 5px;
     flex-direction: column;
   }
 `;
@@ -23,6 +23,7 @@ export const BeerWrapper = styled.div`
   align-items: center;
   @media screen and (max-width: 960px) {
     flex-direction: column;
+    height: 130vh;
   }
 `;
 
@@ -54,13 +55,19 @@ export const ImageContainer = styled.div`
     );
   }
   @media screen and (max-width: 960px) {
-    width: 100%;
+    width: 80%;
+    padding-bottom: 1rem;
   }
 `;
 
 export const BeerImage = styled.img`
   width: 100px;
   height: auto;
+  @media screen and (max-width: 960px) {
+    width: 30%;
+    padding: 0 10px;
+    height: auto;
+  }
 `;
 
 export const BeerInfoContainer = styled.div`
@@ -69,6 +76,7 @@ export const BeerInfoContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-top: 4rem;
   @media screen and (max-width: 960px) {
     width: 100%;
     padding: 0 10px;
@@ -99,12 +107,26 @@ export const IconAndText = styled.div`
   text-align: center;
   justify-items: center;
   padding: 5px 0;
+  @media screen and (max-width: 960px) {
+    font-size: ${({ theme }) => theme.fontSize.small};
+  }
 `;
 
 export const Description = styled.p`
   text-align: justify;
-  line-height: 25px;
   font-weight: ${({ theme }) => theme.fontWeight.thin};
+  @media screen and (max-width: 960px) {
+    font-size: ${({ theme }) => theme.fontSize.mobile};
+  }
+`;
+
+export const Ingredients = styled.div`
+  color: ${({ theme }) => theme.colors.orange};
+  font-size: ${({ theme }) => theme.fontSize.small};
+  padding: 0.3rem 0;
+  @media screen and (max-width: 960px) {
+    font-size: ${({ theme }) => theme.fontSize.mobile};
+  }
 `;
 export const ButtonContainer = styled.div`
   display: flex;

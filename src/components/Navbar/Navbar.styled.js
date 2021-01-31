@@ -78,7 +78,7 @@ export const NavbarMenu = styled.ul`
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 85vh;
+    height: 90vh;
     position: absolute;
     top: 80px;
     left: ${({ click }) => (click ? 0 : "-100%")};
