@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
 body {
   font-family: 'Tako', sans-serif;
   background: ${({ theme }) => theme.colors.semidark};
+  user-select: none;
 }
 p{
   font-family: 'Arial';
