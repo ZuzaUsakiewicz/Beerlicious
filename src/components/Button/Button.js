@@ -15,7 +15,14 @@ export const Button = styled(Link)`
   will-change: background-position, color;
   transition: background-position 0.4s ease-in-out, color 0.4s ease-in-out;
   &:hover {
-    color: #fff;
+    color: ${({ theme }) => theme.colors.dark};
     background-position: 0% 100%;
+  }
+  &:active {
+    color: ${({ theme }) => theme.colors.dark};
+    background-position: 0% 100%;
+  }
+  @media screen and (max-width: 960px) {
+    font-size: ${({ theme }) => theme.fontSize.mobile};
   }
 `;
