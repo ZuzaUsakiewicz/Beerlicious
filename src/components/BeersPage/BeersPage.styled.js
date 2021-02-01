@@ -4,6 +4,9 @@ import { motion } from "framer-motion";
 export const BeersPageContainer = styled(motion.section)`
   width: 100%;
   padding: 10rem 1rem 1rem 1rem;
+  @media screen and (max-width: 960px) {
+    padding: 5rem 1rem 0 1rem;
+  }
 `;
 
 export const AllBeersContainer = styled.div`
@@ -36,6 +39,7 @@ export const BeerItemContainer = styled.div`
   }
   @media screen and (max-width: 960px) {
     max-width: 300px;
+    height: 350px;
   }
 `;
 
@@ -51,6 +55,15 @@ export const BeerNames = styled.div`
   height: 100px;
   width: 100%;
   margin-bottom: 15px;
+  @media screen and (max-width: 960px) {
+    height: 80px;
+    h2 {
+      font-size: ${({ theme }) => theme.fontSize.small};
+    }
+    h5 {
+      font-size: ${({ theme }) => theme.fontSize.mobile};
+    }
+  }
 `;
 
 export const BeerImageWrapper = styled.div`
@@ -65,7 +78,7 @@ export const BeerImage = styled.img`
 `;
 
 export const ModalBackground = styled.div`
-  width: 100%;
+  width: 100vw;
   height: ${({ modal }) => (modal ? "100vh" : 0)};
   opacity: ${({ modal }) => (modal ? 1 : 0)};
   pointer-events: ${({ modal }) => (modal ? "showing" : "none")};
@@ -87,12 +100,13 @@ export const ModalWrapper = styled.div`
   cursor: auto;
   margin-top: 5%;
   z-index: 999;
-  width: 700px;
+  max-width: 700px;
   height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: justify;
   padding: 10px 20px;
   color: ${({ theme }) => theme.colors.primary};
   background: ${({ theme }) => theme.colors.semidark};
@@ -120,12 +134,29 @@ export const InfoWrapper = styled.div`
   width: 90%;
   display: flex;
   justify-content: space-evenly;
+  @media screen and (max-width: 960px) {
+    width: 95%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    img {
+      position: absolute;
+      top: 5%;
+      right: 30%;
+      z-index: -1;
+      opacity: 0.7;
+    }
+  }
 `;
 
 export const BeerDetails = styled.div`
   display: flex;
   flex-direction: column;
   padding: 0 20px;
+  @media screen and (max-width: 960px) {
+    padding: 0 2px;
+    margin-top: 50px;
+  }
 `;
 
 export const Table = styled.div`
@@ -133,16 +164,28 @@ export const Table = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  @media screen and (max-width: 960px) {
+    font-size: ${({ theme }) => theme.fontSize.mobile};
+  }
 `;
 
 export const Name = styled.h1`
   font-size: ${({ theme }) => theme.fontSize.regular};
   color: ${({ theme }) => theme.colors.orange};
+  @media screen and (max-width: 960px) {
+    font-size: ${({ theme }) => theme.fontSize.small};
+  }
 `;
 
 export const Tagline = styled.h3`
   font-size: ${({ theme }) => theme.fontSize.small};
+  @media screen and (max-width: 960px) {
+    font-size: ${({ theme }) => theme.fontSize.mobile};
+  }
 `;
 export const Description = styled.p`
   font-size: ${({ theme }) => theme.fontSize.small};
+  @media screen and (max-width: 960px) {
+    font-size: ${({ theme }) => theme.fontSize.mobile};
+  }
 `;

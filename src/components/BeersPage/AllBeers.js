@@ -10,7 +10,6 @@ const AllBeers = () => {
       {beers.map((beer) => {
         return <SingleBeer beer={beer} key={beer.id} />;
       })}
-      beer-test
     </AllBeersContainer>
   );
 };
