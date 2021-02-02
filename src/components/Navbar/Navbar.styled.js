@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { GiBrokenBottle } from "react-icons/gi";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export const Nav = styled.nav`
   margin: auto;
@@ -38,7 +38,7 @@ export const NavbarContainer = styled.div`
   z-index: 1;
 `;
 
-export const NavLogo = styled(Link)`
+export const NavLogo = styled(NavLink)`
   color: ${({ theme }) => theme.colors.primary};
   cursor: pointer;
   display: flex;
@@ -106,7 +106,7 @@ export const NavItem = styled.li`
   }
 `;
 
-export const NavLink = styled(Link)`
+export const NaviLink = styled(NavLink)`
   color: ${({ theme }) => theme.colors.primary};
   display: flex;
   align-items: center;

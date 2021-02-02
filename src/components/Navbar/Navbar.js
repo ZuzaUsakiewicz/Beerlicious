@@ -8,7 +8,7 @@ import {
   HamburgerMenu,
   NavbarMenu,
   NavItem,
-  NavLink,
+  NaviLink,
   NavbarIcons,
 } from "./Navbar.styled";
 import { IconLink } from "../../layout/Layout";
@@ -57,21 +57,21 @@ function Navbar() {
         </HamburgerMenu>
         <NavbarMenu onClick={handleClick} click={click}>
           <NavItem>
-            <NavLink to="/">Home</NavLink>
+            <NaviLink to="/">Home</NaviLink>
           </NavItem>
           <NavItem>
-            <NavLink to="/about">About</NavLink>
+            <NaviLink to="/about">About</NaviLink>
           </NavItem>
           <NavItem>
-            <NavLink to="/beers">Beers</NavLink>
+            <NaviLink to="/beers">Beers</NaviLink>
           </NavItem>
           <NavItem>
-            <NavLink to="/brewpub">Brewpubs</NavLink>
+            <NaviLink to="/brewpub">Brewpubs</NaviLink>
           </NavItem>
           <NavItem>
-            <NavLink to="/contact" padright="true">
+            <NaviLink to="/contact" padright="true">
               Contact
-            </NavLink>
+            </NaviLink>
           </NavItem>
           <NavbarIcons>
             <IconLink navbar href="https://google.com" target="_blank">
