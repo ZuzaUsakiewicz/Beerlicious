@@ -13,6 +13,10 @@ export const ContactWrapper = styled.div`
   align-items: center;
   width: 100%;
   padding: 3rem;
+  @media screen and (max-width: 960px) {
+    flex-direction: column;
+    padding: 1rem;
+  }
 `;
 
 export const TextWrapper = styled.div`
@@ -27,6 +31,15 @@ export const TextWrapper = styled.div`
   }
   b {
     color: ${({ theme }) => theme.colors.orange};
+  }
+  @media screen and (max-width: 960px) {
+    padding: 0;
+    h1 {
+      font-size: ${({ theme }) => theme.fontSize.regular};
+    }
+    p {
+      font-size: ${({ theme }) => theme.fontSize.small};
+    }
   }
 `;
 
@@ -44,4 +57,7 @@ export const IconWrapper = styled.div`
   width: 30%;
   justify-content: space-between;
   padding-top: 1rem;
+  @media screen and (max-width: 960px) {
+    width: 70%;
+  }
 `;
