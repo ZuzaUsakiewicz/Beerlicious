@@ -4,7 +4,7 @@ import {
   InfoText,
   Informations,
   ImageContainer,
-  Span,
+  LinkAbout,
 } from "./InfoSection.styled";
 import { Title } from "../../layout/Layout";
 
@@ -24,7 +24,7 @@ const InfoSection = () => {
           ullam tempora officia possimus, tempore labore nostrum odit enim?
           Fugiat, officia illo.
         </Informations>
-        <Span> Because we love beer</Span>
+        <LinkAbout to="/about"> Because we love beer</LinkAbout>
       </InfoText>
       <ImageContainer></ImageContainer>
     </InfoSectionContainer>

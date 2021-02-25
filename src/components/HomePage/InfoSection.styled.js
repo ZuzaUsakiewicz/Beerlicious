@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const InfoSectionContainer = styled.section`
   width: 100%;
@@ -45,13 +46,35 @@ export const ImageContainer = styled.div`
   box-shadow: -2px 2px 20px 10px rgba(23, 55, 83, 0.6);
 `;
 
-export const Span = styled.span`
+export const LinkAbout = styled(Link)`
   color: ${({ theme }) => theme.colors.orange};
+  position: relative;
   font-weight: bold;
   letter-spacing: 4px;
   text-transform: uppercase;
   font-style: italic;
+  text-decoration: none;
   font-size: ${({ theme }) => theme.fontSize.regular};
+  transition: opacity 0.4s ease-in-out;
+  &:hover {
+    opacity: 0.8;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 4px;
+    background: ${({ theme }) => theme.colors.orange};
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease-in-out;
+  }
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
   @media screen and (max-width: 960px) {
     font-size: 1rem;
   }

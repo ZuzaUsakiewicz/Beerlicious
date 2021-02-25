@@ -45,6 +45,9 @@ export const NavLogo = styled(NavLink)`
   text-decoration: none;
   align-items: center;
   font-size: 2rem;
+  @media screen and (max-width: 960px) {
+    font-size: 1.6rem;
+  }
 `;
 
 export const NavIcon = styled(GiBrokenBottle)`
@@ -89,20 +92,27 @@ export const NavbarMenu = styled.ul`
 
 export const NavItem = styled.li`
   height: 80px;
-  border-bottom: 4px solid transparent;
-  transition: border-bottom 0.5s ease-in-out;
-  &:hover {
-    border-bottom: 4px solid ${({ theme }) => theme.colors.orange};
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 4px;
+    background: ${({ theme }) => theme.colors.orange};
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease-in-out;
   }
-  /* &.active {
-    border-bottom: 4px solid ${({ theme }) => theme.colors.orange};
-  } */
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
   @media screen and(max-width: 960px) {
     width: 100%;
     border: none;
-    &:hover {
-      border-bottom: 4px solid transparent;
-    }
   }
 `;
 
