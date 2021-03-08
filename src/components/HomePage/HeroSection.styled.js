@@ -1,9 +1,8 @@
-import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 import styled from "styled-components";
-import { motion } from "framer-motion";
 
 export const MainSection = styled.section`
-  height: 100vh;
+  min-height: 100vh;
+  width: 100%;
 `;
 
 export const SliderContainer = styled.div`
@@ -13,6 +12,8 @@ export const SliderContainer = styled.div`
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
+  margin-top: -20px;
+  background: rgba(0, 0, 0, 0.7);
   @media screen and (max-width: 960px) {
     h1 {
       font-size: 1.5rem;
@@ -23,73 +24,19 @@ export const SliderContainer = styled.div`
   }
 `;
 
-export const SliderContent = styled(motion.div)`
+export const SliderContent = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 105vh;
   background: url(${(props) => props.img});
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  box-shadow: inset 0 0 0 1000px rgba(9, 67, 109, 0.63);
-`;
-
-export const ButtonPrev = styled.button`
-  border: none;
-  border-radius: 10px;
-  background: transparent;
-  padding: 20px 40px;
-  position: absolute;
-  top: 50%;
-  left: 5%;
-  cursor: pointer;
-  transition: background 0.4s ease-in-out;
-  :hover {
-    background: rgba(0, 0, 0, 0.6);
-  }
-  @media screen and (max-width: 960px) {
-    top: 80%;
-    left: 2%;
-  }
-`;
-
-export const ButtonNext = styled.button`
-  border: none;
-  border-radius: 10px;
-  background: transparent;
-  padding: 20px 40px;
-  position: absolute;
-  top: 50%;
-  right: 5%;
-  cursor: pointer;
-  transition: background 0.4s ease-in-out;
-  :hover {
-    background: rgba(0, 0, 0, 0.6);
-  }
-  @media screen and (max-width: 960px) {
-    top: 80%;
-    right: 2%;
-  }
-`;
-
-export const Previous = styled(FaAngleLeft)`
-  color: ${({ theme }) => theme.colors.primary};
-  font-size: 3rem;
-  @media screen and (max-width: 960px) {
-    font-size: ${({ theme }) => theme.fontSize.regular};
-  }
-`;
-
-export const Next = styled(FaAngleRight)`
-  color: ${({ theme }) => theme.colors.primary};
-  font-size: 3rem;
-  @media screen and (max-width: 960px) {
-    font-size: ${({ theme }) => theme.fontSize.regular};
-  }
+  box-shadow: inset 0 0 0 1000px rgba(8, 5, 1, 0.404);
 `;
 
 export const TextContainer = styled.div`
@@ -97,8 +44,8 @@ export const TextContainer = styled.div`
   width: 60%;
   height: 90%;
   @media screen and (max-width: 960px) {
-    padding-top: 180px;
-    width: 80%;
+    padding-top: 300px;
+    width: 60%;
     font-size: ${({ theme }) => theme.fontSize.small};
   }
 `;
