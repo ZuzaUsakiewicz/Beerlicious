@@ -137,7 +137,7 @@ export const NavbarIcons = styled.div`
   width: 120%;
   display: flex;
   align-items: center;
-  padding: 0 0 0 30px;
+  padding: 10px 0 0 30px;
   @media screen and (max-width: 960px) {
     justify-content: center;
     padding: 20px 0;
