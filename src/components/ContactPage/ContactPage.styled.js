@@ -15,7 +15,7 @@ export const ContactWrapper = styled.div`
   padding: 3rem;
   @media screen and (max-width: 960px) {
     flex-direction: column;
-    padding: 1rem;
+    padding: 0.5rem;
   }
 `;
 
@@ -28,6 +28,7 @@ export const TextWrapper = styled.div`
   }
   p {
     font-size: ${({ theme }) => theme.fontSize.regular};
+    color: ${({ theme }) => theme.colors.orange};
   }
   b {
     color: ${({ theme }) => theme.colors.orange};
@@ -60,4 +61,20 @@ export const IconWrapper = styled.div`
   @media screen and (max-width: 960px) {
     width: 70%;
   }
+`;
+
+export const ContactForm = styled.form`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 50vh;
+  align-items: flex-start;
+  width: 100%;
+`;
+
+export const FormInput = styled.input`
+  width: 100%;
+  height: ${({ message }) => (message ? "5rem" : "3rem")};
+  border: none;
+  padding: 0.5rem;
 `;
