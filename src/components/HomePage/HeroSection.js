@@ -21,7 +21,7 @@ const HeroSection = () => {
                   <Title>{item.title}</Title>
                   <SliderParagraph>{item.text}</SliderParagraph>
                   <Button primary="true" to={item.url}>
-                    read more
+                    {item.buttonText}
                   </Button>
                 </TextContainer>
               </SliderContent>
