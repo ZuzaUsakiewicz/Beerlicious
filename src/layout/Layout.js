@@ -23,7 +23,7 @@ p{
 .rec.rec-carousel-wrapper{
   margin: 0;
   padding: 0;
-  border: 0;
+  border: none;
   position: relative;
 }
 
@@ -31,14 +31,12 @@ p{
   height: 100vh;
   width: 100vw;
   position: relative;
-  border: 0;
+  border: none;
 }
 .rec.rec-pagination {
   position: absolute;
   top: 90%;
   z-index: 450;
-  left: 45%;
-  
 }
 .rec.rec-arrow{
   color:white;
@@ -70,8 +68,8 @@ p{
   background: transparent;
 }
 .rec.rec-dot{
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   border-radius: 0;
   margin: 0 10px;
   background-color: rgba(29, 112, 162,0.6);
@@ -85,16 +83,7 @@ p{
 }
 @media screen and (max-width: 960px){
   .rec.rec-arrow{
-  color:white;
-  position: absolute;
-  top: 60%;
-  z-index: 400;
-}
-.rec.rec-arrow-left {
-  left: 3%;
-}
-.rec.rec-arrow-right {
-  right: 3%;
+  display: none;
 }
 }
 // End of Carousel styling
@@ -103,6 +92,11 @@ p{
 const Container = styled.div`
   font-family: "Teko", sans-serif;
   font-weight: ${({ theme }) => theme.fontWeight.normal};
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 2200px;
 `;
 
 const Layout = ({ children }) => (
