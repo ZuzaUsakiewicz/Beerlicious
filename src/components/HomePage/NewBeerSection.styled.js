@@ -7,10 +7,14 @@ export const NewBeerContainer = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem 3rem;
+  padding: 2rem 3rem;
   margin-bottom: 4rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset -2px 2px 20px 1000px rgba(29, 112, 162, 0.788);
+  background-image: url("https://images.unsplash.com/photo-1603407737655-e8467cf1a7c0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1868&q=80");
   @media screen and (max-width: 960px) {
-    min-height: 200vh;
     padding: 0.4rem 5px 0 5px;
     flex-direction: column;
   }
