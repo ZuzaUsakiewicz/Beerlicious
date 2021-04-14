@@ -1,38 +1,43 @@
+import sliderOneImage from "../../images/josh-olalde-hH12vPERjwE-unsplash.jpg";
+import sliderTwoImage from "../../images/ivan-aleksic-mT_PcIxUHxY-unsplash.jpg";
+import sliderThreeImage from "../../images/jon-parry-PFICsHh7VAA-unsplash.jpg";
+import sliderFourImage from "../../images/josh-olalde-LoKVYv5pVKc-unsplash.jpg";
+
 const sliderdata = [
   {
     id: 1,
-    img:
-      "https://images.unsplash.com/photo-1554127959-b04104f23bab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1901&q=80",
+    img: `${sliderOneImage}`,
     title: "Beerlicious!",
     url: "/about",
     text:
       "Hello! We are probably the one and only Beerlicious brewery in the World! Nice to meet you!",
+    buttonText: "read more",
   },
   {
     id: 2,
-    img:
-      "https://images.unsplash.com/photo-1457382713369-161d1d986f54?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80",
+    img: `${sliderTwoImage}`,
     title: "The Best Beer Recipes",
     url: "/beers",
     text:
       "We made our Beers with love. The recipies we use are always refined.",
+    buttonText: "meet us!",
   },
   {
     id: 3,
-    img:
-      "https://images.unsplash.com/photo-1549044466-404f19605ddc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
+    img: `${sliderThreeImage}`,
     title: "Best Places for Our Beer",
     url: "/brewpub",
     text:
       "We love to meet you and gave you our Beers! Find a place you want to grab a Beer!",
+    buttonText: "Drink our beer",
   },
   {
     id: 4,
-    img:
-      "https://images.unsplash.com/photo-1542634093-e0198d4d1e46?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
+    img: `${sliderFourImage}`,
     title: "Wanna Beer?",
     url: "/contact",
     text: "It's simple: contact us whatever you want to say or drink!",
+    buttonText: "contact us!",
   },
 ];
 
