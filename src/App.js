@@ -21,7 +21,7 @@ function App() {
   useEffect(() => {
     const tl = gsap.timeline();
     tl.from(appRef.current, {
-      duration: 3,
+      duration: 1,
       delay: 2,
       autoAlpha: 0,
       ease: "power3.in",
