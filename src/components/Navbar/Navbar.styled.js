@@ -1,7 +1,20 @@
 import styled from "styled-components";
 import { GiBrokenBottle } from "react-icons/gi";
 import { NavLink } from "react-router-dom";
+import { keyframes } from "styled-components";
 
+export const bottle = keyframes`
+  0% {
+    transform: translateY(0.2rem);
+  }
+
+  50% {
+    transform: translateY(-0.2rem);
+  }
+  100% {
+    transform: translateY(0.2rem);
+  }
+`;
 export const Nav = styled.nav`
   margin: auto;
   padding: 0 2rem;
@@ -53,6 +66,7 @@ export const NavLogo = styled(NavLink)`
 export const NavIcon = styled(GiBrokenBottle)`
   margin-right: 1rem;
   color: ${({ theme }) => theme.colors.orange};
+  animation: ${bottle} 4s linear infinite;
 `;
 
 export const HamburgerMenu = styled.div`
