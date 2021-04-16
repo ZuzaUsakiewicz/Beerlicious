@@ -6,6 +6,7 @@ import BeersPage from "./pages/BeersPage";
 import BrewpubPage from "./pages/BrewpubPage";
 import ContactPage from "./pages/ContactPage";
 import ScrollToTop from "./components/ScrollToTop";
+import ButtonToTop from "./components/Button/ButtonToTop";
 import { Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
@@ -43,6 +44,7 @@ function App() {
           </Switch>
         </AnimatePresence>
         <Footer />
+        <ButtonToTop />
       </Layout>
     </div>
   );
