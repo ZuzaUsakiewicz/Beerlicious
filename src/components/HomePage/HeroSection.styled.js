@@ -40,11 +40,11 @@ export const SliderContent = styled.div`
 `;
 
 export const TextContainer = styled.div`
-  padding-top: 260px;
+  padding-top: 12rem;
   width: 60%;
   height: 90%;
   @media screen and (max-width: 960px) {
-    padding-top: 300px;
+    padding-top: 10rem;
     width: 60%;
     font-size: ${({ theme }) => theme.fontSize.small};
   }
