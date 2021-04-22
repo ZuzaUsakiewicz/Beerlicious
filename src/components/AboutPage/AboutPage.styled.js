@@ -1,5 +1,9 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import AboutFirstImage from "../../images/sigmund-I9K6dbE7GOw-unsplash.jpg";
+import AboutSecondImage from "../../images/stefan-cosma-uLuPpN5-C0E-unsplash.jpg";
+import AboutThirdImage from "../../images/meritt-thomas-2UsNF4Az-Ko-unsplash.jpg";
+
 export const AboutSectionContainer = styled(motion.section)`
   width: 100%;
 `;
@@ -8,23 +12,24 @@ export const TitleSection = styled.div`
   color: white;
   padding: 10rem 1rem;
   height: 100vh;
-  background-image: url("https://images.unsplash.com/photo-1436076863939-06870fe779c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  background-image: url(${AboutFirstImage});
   box-shadow: inset 0 0 0 1000px rgba(0, 3, 5, 0.521);
   background-attachment: fixed;
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
   @media screen and (max-width: 960px) {
-    padding: 10rem 0.5rem;
+    padding: 5rem 0.5rem;
+    height: 70vh;
   }
 `;
 
 export const HistorySection = styled(TitleSection)`
-  background-image: url("https://images.unsplash.com/photo-1571613316887-6f8d5cbf7ef7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80");
+  background-image: url(${AboutSecondImage});
 `;
 
 export const FutureSection = styled(TitleSection)`
-  background-image: url("https://images.unsplash.com/photo-1584225064536-d0fbc0a10f18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80");
+  background-image: url(${AboutThirdImage});
 `;
 
 export const Text = styled.div`
@@ -32,7 +37,7 @@ export const Text = styled.div`
   justify-content: space-evenly;
   padding: 3rem 1rem 3rem 10rem;
   @media screen and (max-width: 960px) {
-    padding: 5rem 0.5rem;
+    padding: 1.3rem 0.5rem;
     flex-direction: column;
   }
 `;
@@ -41,6 +46,9 @@ export const H = styled.h1`
   color: ${({ theme }) => theme.colors.orange};
   font-size: ${({ theme }) => theme.fontSize.big};
   font-weight: ${({ theme }) => theme.fontWeight.bold};
+  @media screen and (max-width: 960px) {
+    font-size: ${({ theme }) => theme.fontSize.small};
+  }
 `;
 
 export const Paragraph = styled.p`
@@ -50,5 +58,6 @@ export const Paragraph = styled.p`
   width: 50%;
   @media screen and (max-width: 960px) {
     width: 100%;
+    font-size: ${({ theme }) => theme.fontSize.mobile};
   }
 `;
