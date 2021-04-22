@@ -13,6 +13,7 @@ body {
   background: ${({ theme }) => theme.colors.semidark};
   user-select: none;
   box-sizing: inherit;
+  scroll-behavior: smooth;
 }
 p{
   font-family: 'Arial';
@@ -122,7 +123,7 @@ export const Title = styled.h1`
     right: 0;
     left: 0;
     width: 100px;
-    border-bottom: 10px solid ${({ theme }) => theme.colors.hover};
+    border-bottom: 10px solid ${({ theme }) => theme.colors.orange};
   }
   @media screen and (max-width: 960px) {
     font-size: 1.3rem;
