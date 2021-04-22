@@ -36,6 +36,9 @@ export const BeerItemContainer = styled.div`
   &:hover {
     border-bottom: 10px solid ${({ theme }) => theme.colors.dark};
     box-shadow: 2px 2px 25px 10px rgba(23, 55, 83, 0.6);
+    img {
+      transform: scale(1.1) translateY(20px);
+    }
   }
   @media screen and (max-width: 960px) {
     max-width: 300px;
@@ -75,6 +78,7 @@ export const BeerImageWrapper = styled.div`
 export const BeerImage = styled.img`
   height: 10rem;
   width: auto;
+  transition: transform 0.4s ease-in-out;
 `;
 
 export const ModalBackground = styled.div`
@@ -82,7 +86,7 @@ export const ModalBackground = styled.div`
   height: ${({ modal }) => (modal ? "100vh" : 0)};
   opacity: ${({ modal }) => (modal ? 1 : 0)};
   pointer-events: ${({ modal }) => (modal ? "showing" : "none")};
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
   position: absolute;
   left: 0;
   top: 0;
