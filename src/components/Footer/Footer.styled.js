@@ -20,6 +20,7 @@ export const FooterContainer = styled.footer`
 
 export const LinksContainer = styled.div`
   width: 30%;
+
   @media screen and (max-width: 960px) {
     width: 80%;
     height: 2rem;
@@ -29,8 +30,8 @@ export const LinksContainer = styled.div`
 export const LinkList = styled.ul`
   list-style-type: none;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: flex-end;
 `;
 
 export const Li = styled.li`
@@ -64,7 +65,7 @@ export const IconsContainer = styled.div`
   width: 30%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   @media screen and (max-width: 960px) {
     width: 100%;
   }
