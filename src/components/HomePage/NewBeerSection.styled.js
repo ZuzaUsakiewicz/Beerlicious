@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import BgImage from "../../images/ryunosuke-kikuno-Fc-6aFuKtE8-unsplash.jpg";
 
 export const NewBeerContainer = styled.section`
   width: 100%;
@@ -7,13 +8,13 @@ export const NewBeerContainer = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem 3rem;
+  padding: 2rem 4rem;
   margin-bottom: 4rem;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   box-shadow: inset -2px 2px 20px 1000px rgba(29, 112, 162, 0.788);
-  background-image: url("https://images.unsplash.com/photo-1603407737655-e8467cf1a7c0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1868&q=80");
+  background-image: url(${BgImage});
   @media screen and (max-width: 960px) {
     padding: 0.4rem 5px 0 5px;
     flex-direction: column;
@@ -22,6 +23,7 @@ export const NewBeerContainer = styled.section`
 
 export const BeerWrapper = styled.div`
   width: 100%;
+  padding: 0 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,7 +120,6 @@ export const IconAndText = styled.div`
 
 export const Description = styled.p`
   text-align: justify;
-  font-weight: ${({ theme }) => theme.fontWeight.thin};
   @media screen and (max-width: 960px) {
     font-size: ${({ theme }) => theme.fontSize.mobile};
   }

@@ -4,8 +4,11 @@ import { motion } from "framer-motion";
 export const ContactSectionContainer = styled(motion.section)`
   width: 100%;
   min-height: 100vh;
-  padding: 10rem 1rem;
+  padding: 10rem 1rem 0rem 1rem;
   color: ${({ theme }) => theme.colors.primary};
+  @media screen and (max-width: 960px) {
+    padding: 5rem 1rem;
+  }
 `;
 
 export const ContactWrapper = styled.div`
