@@ -1,5 +1,5 @@
 import sliderOneImage from "../../images/josh-olalde-hH12vPERjwE-unsplash.jpg";
-import sliderTwoImage from "../../images/ivan-aleksic-mT_PcIxUHxY-unsplash.jpg";
+import sliderTwoImage from "../../images/jon-parry-XrPJ2J7QYKo-unsplash.jpg";
 import sliderThreeImage from "../../images/jon-parry-PFICsHh7VAA-unsplash.jpg";
 import sliderFourImage from "../../images/josh-olalde-LoKVYv5pVKc-unsplash.jpg";
 
@@ -27,8 +27,7 @@ const sliderdata = [
     img: `${sliderThreeImage}`,
     title: "Best Places for Our Beer",
     url: "/brewpub",
-    text:
-      "We love to meet you and gave you our Beers! Find a place you want to grab a Beer!",
+    text: "Find a place you want to grab our Beer!",
     buttonText: "Drink our beer",
   },
   {
@@ -36,7 +35,7 @@ const sliderdata = [
     img: `${sliderFourImage}`,
     title: "Wanna Beer?",
     url: "/contact",
-    text: "It's simple: contact us whatever you want to say or drink!",
+    text: "It's simple: you want beer - we give you a Beer.",
     buttonText: "contact us!",
   },
 ];
