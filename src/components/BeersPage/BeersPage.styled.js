@@ -41,7 +41,7 @@ export const BeerItemContainer = styled.div`
     }
   }
   @media screen and (max-width: 960px) {
-    max-width: 300px;
+    max-width: 100%;
     height: 350px;
   }
 `;
@@ -158,8 +158,8 @@ export const BeerDetails = styled.div`
   flex-direction: column;
   padding: 0 20px;
   @media screen and (max-width: 960px) {
-    padding: 0 2px;
-    margin-top: 50px;
+    padding: 0 0.2rem;
+    margin-top: 3rem;
   }
 `;
 
