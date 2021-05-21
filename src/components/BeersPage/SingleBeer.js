@@ -22,7 +22,6 @@ const SingleBeer = ({ beer }) => {
 
   const handleModal = () => {
     setModal(!modal);
-    window.scroll(0, 0);
     document.body.style.position = modal ? "" : "fixed";
     document.querySelector("nav").style.zIndex = modal ? "999" : "0";
     document.querySelector("button").style.position = modal
