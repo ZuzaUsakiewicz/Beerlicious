@@ -47,7 +47,6 @@ const BrewpubPage = () => {
         variants={pageTransitions}
       >
         <Title>Breweries</Title>
-        <h1>Loading...</h1>
       </BreweriesPageContainer>
     );
   } else {
