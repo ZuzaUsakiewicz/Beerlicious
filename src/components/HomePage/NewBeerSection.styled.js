@@ -3,7 +3,7 @@ import BgImage from "../../images/ryunosuke-kikuno-Fc-6aFuKtE8-unsplash.jpg";
 
 export const NewBeerContainer = styled.section`
   width: 100%;
-  min-height: 100vh;
+  min-height: 110vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

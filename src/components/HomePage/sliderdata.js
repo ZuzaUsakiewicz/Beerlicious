@@ -9,8 +9,7 @@ const sliderdata = [
     img: `${sliderOneImage}`,
     title: "Beerlicious!",
     url: "/about",
-    text:
-      "Hello! We are probably the one and only Beerlicious brewery in the World! Nice to meet you!",
+    text: "Hello! We are probably the one and only Beerlicious brewery in the World! Nice to meet you!",
     buttonText: "read more",
   },
   {
@@ -18,8 +17,7 @@ const sliderdata = [
     img: `${sliderTwoImage}`,
     title: "The Best Beer Recipes",
     url: "/beers",
-    text:
-      "We made our Beers with love. The recipies we use are always refined.",
+    text: "We made our Beers with love. The recipies we use are always refined.",
     buttonText: "meet us!",
   },
   {
@@ -28,7 +26,7 @@ const sliderdata = [
     title: "Best Places for Our Beer",
     url: "/brewpub",
     text: "Find a place you want to grab our Beer!",
-    buttonText: "Drink our beer",
+    buttonText: "Check!",
   },
   {
     id: 4,

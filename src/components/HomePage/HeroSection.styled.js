@@ -55,6 +55,6 @@ export const SliderParagraph = styled.p`
   font-weight: ${({ theme }) => theme.fontWeight.thin};
   font-size: ${({ theme }) => theme.fontSize.regular};
   @media screen and (max-width: 960px) {
-    font-size: 15px;
+    font-size: ${({ theme }) => theme.fontSize.regular};
   }
 `;

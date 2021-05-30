@@ -9,7 +9,7 @@ export const theme = {
   },
   fontSize: {
     mobile: "1em",
-    small: "1.3em",
+    small: "1.2em",
     regular: "1.5em",
     big: "2.5rem",
     huge: "5rem",
