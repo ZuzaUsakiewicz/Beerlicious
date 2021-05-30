@@ -1,5 +1,3 @@
-Beerlicious Website made with:
-
 # Beerlicious 
 ###### Colorful landing page for Beerlicious - a fictional Beer Company. 
 ### [Beerlicious](https://beerlicious.netlify.app) Website
