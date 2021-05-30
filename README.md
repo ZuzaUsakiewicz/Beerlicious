@@ -1,6 +1,6 @@
 Beerlicious Website made with:
 
-# Starship 
+# Beerlicious 
 ###### Colorful landing page for Beerlicious - a fictional Beer Company. 
 ### [Beerlicious](https://beerlicious.netlify.app) Website
 ## Table of contents
