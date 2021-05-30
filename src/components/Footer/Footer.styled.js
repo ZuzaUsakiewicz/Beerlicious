@@ -46,7 +46,7 @@ export const LinkTo = styled(Link)`
     color: ${({ theme }) => theme.colors.primary};
   }
   @media screen and (max-width: 960px) {
-    font-size: ${({ theme }) => theme.fontSize.mobile};
+    font-size: ${({ theme }) => theme.fontSize.small};
     padding-bottom: 0.2rem;
   }
 `;
@@ -56,7 +56,7 @@ export const Copyright = styled.div`
   text-align: center;
   @media screen and (max-width: 960px) {
     width: 100%;
-    font-size: ${({ theme }) => theme.fontSize.mobile};
+    font-size: ${({ theme }) => theme.fontSize.small};
     padding: 0.6rem 0;
   }
 `;

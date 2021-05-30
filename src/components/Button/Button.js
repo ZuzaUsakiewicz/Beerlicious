@@ -23,6 +23,6 @@ export const Button = styled(Link)`
     background-position: 0% 100%;
   }
   @media screen and (max-width: 960px) {
-    font-size: ${({ theme }) => theme.fontSize.mobile};
+    font-size: ${({ theme }) => theme.fontSize.regular};
   }
 `;
