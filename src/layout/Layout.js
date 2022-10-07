@@ -66,7 +66,8 @@ p{
 }
 .rec-dot_active{
   box-shadow: 0 0 1px 6px ${({ theme }) => theme.colors.orange};
-  background: transparent;
+  background: #10405e99;
+  outline:   #10405e99;
 }
 .rec.rec-dot{
   width: 10px;
@@ -74,12 +75,13 @@ p{
   border-radius: 0;
   margin: 0 10px;
   background-color: rgba(29, 112, 162,0.6);
+  outline: #10405e99;
 }
 .rec.rec-dot:focus{
   box-shadow: 0 0 1px 6px ${({ theme }) => theme.colors.orange};
 }
 .rec.rec-dot:hover{
-  background: ${({ theme }) => theme.colors.orange};
+  background-color: ${({ theme }) => theme.colors.orange};
   box-shadow: 0 0 1px 4px ${({ theme }) => theme.colors.orange};
 }
 @media screen and (max-width: 960px){
