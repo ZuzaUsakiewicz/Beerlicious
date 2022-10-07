@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 
 export const ContactSectionContainer = styled(motion.section)`
   width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
   min-height: 100vh;
   padding: 10rem 1rem 0rem 1rem;
   color: ${({ theme }) => theme.colors.primary};
@@ -16,6 +18,7 @@ export const ContactWrapper = styled.div`
   align-items: center;
   width: 100%;
   padding: 3rem;
+
   @media screen and (max-width: 960px) {
     flex-direction: column;
     padding: 0.5rem;

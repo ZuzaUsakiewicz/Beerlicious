@@ -6,12 +6,14 @@ import AboutThirdImage from "../../images/meritt-thomas-2UsNF4Az-Ko-unsplash.jpg
 
 export const AboutSectionContainer = styled(motion.section)`
   width: 100%;
+  max-width: 1900px;
+  margin: 0 auto;
 `;
 
 export const TitleSection = styled.div`
   color: white;
   padding: 10rem 1rem;
-  height: 100vh;
+  height: 50rem;
   background-image: url(${AboutFirstImage});
   box-shadow: inset 0 0 0 1000px rgba(0, 3, 5, 0.521);
   background-attachment: fixed;

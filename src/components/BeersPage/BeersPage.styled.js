@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 export const BeersPageContainer = styled(motion.section)`
   width: 100%;
   padding: 10rem 1rem 1rem 1rem;
+  max-width: 1600px;
+  margin: 0 auto;
   @media screen and (max-width: 960px) {
     padding: 5rem 1rem 0 1rem;
   }

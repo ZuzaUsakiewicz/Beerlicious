@@ -6,6 +6,8 @@ export const BreweriesPageContainer = styled(motion.section)`
   width: 100%;
   min-height: 110vh;
   padding: 10rem 1rem;
+  max-width: 1600px;
+  margin: 0 auto;
 `;
 
 export const BrewContentContainer = styled.div`
